@@ -5,13 +5,15 @@
 header{
   display: flex;
   justify-content: center;
+  font-size: $h5-fz;
+  font-weight: $regular;
+  font-family: $chinese;
   background-color: #AA0601;
   nav{
     display: flex;
     align-items: center;
   }
   .headerBox{
-    width: 67.5%;
     display: flex;
     justify-content: space-between;
     padding: calc(4 * #{$m4-p4}) 0;

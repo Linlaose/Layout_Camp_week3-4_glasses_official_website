@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <!-- header -->
-      <div class="headerBox">
+      <div class="headerBox container">
         <!-- headerBox -->
         <img
           class="headerLogo"
@@ -39,7 +39,75 @@
 
     <%- contents %>
 
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+      <!-- footer -->
+      <div class="footerBox container">
+        <!-- footerBox -->
+        <ul class="footerNavList">
+          <!-- footerNavList -->
+          <li class="footerNavItem">
+            <p><a href="#">首頁</a></p>
+            <p><a href="#">系列鏡框</a></p>
+            <p><a href="#">門市據點</a></p>
+            <p><a href="#">部落格</a></p>
+            <p><a href="#">常見問題</a></p>
+          </li>
+          <li class="footerNavItem mediaGap">
+            <a href="#">
+              <img
+                class="socialMediaIcon"
+                src="./assets/images/ic-social-fb.png"
+                alt="facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="socialMediaIcon"
+                src="./assets/images/ic_social_ig.png"
+                alt="instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="socialMediaIcon"
+                src="./assets/images/ic_social_line.png"
+                alt="line"
+              />
+            </a>
+          </li>
+        </ul>
+        <!-- footerNavList end -->
+        <ul class="footerContactList">
+          <!-- footerContactList -->
+          <li class="footerContactItem">
+            <div class="contactBox phoneBox">
+              <img src="./assets/images/phone_white_36dp.svg" alt="phone" />
+              <h3><a href="tel:+0800-000-00">0800-000-00</a></h3>
+            </div>
+            <div class="contactBox mailBox">
+              <img src="./assets/images/mail_white_36dp.svg" alt="email" />
+              <h3>
+                <a href="mailto:glasses@business.com">glasses@business.com</a>
+              </h3>
+            </div>
+          </li>
+        </ul>
+        <!-- footerContactList end -->
+        <ul class="copyrightList">
+          <!-- copyrightList -->
+          <li class="copyrightItem">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <div class="termsBox">
+              <span>隱私權政策</span>
+              <span>服務條款</span>
+            </div>
+          </li>
+        </ul>
+        <!-- copyrightList end -->
+      </div>
+      <!-- footerBox end -->
+    </footer>
+    <!-- footer end -->
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

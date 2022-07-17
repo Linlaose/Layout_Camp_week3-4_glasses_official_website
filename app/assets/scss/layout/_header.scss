@@ -1,0 +1,33 @@
+.outerWrap{
+  max-width: 1920px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #AA0601;
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  .headerBox{
+    width: 67.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(4 * #{$m4-p4}) 0;
+  }
+  .headerLogo{
+    width: 80px;
+  }
+  .navItem{
+    display: flex;
+    gap: $gap;
+    a{
+      color: #FFFFFF;
+      border-bottom: 1px solid transparent;
+      &:hover{
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}

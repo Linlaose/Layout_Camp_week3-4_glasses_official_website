@@ -1,0 +1,9 @@
+.buyButton {
+  padding: calc(1.5 * #{$m4-p4}) calc(3 * #{$m4-p4});
+  color: #fff;
+  background-color: #AA0601;
+  border: none;
+  &:hover{
+    cursor: pointer;
+  }
+}

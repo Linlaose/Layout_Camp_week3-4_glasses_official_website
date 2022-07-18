@@ -1,0 +1,27 @@
+.banner{
+  height: 787px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/home-header.png);
+  background-size: cover;
+  .bannerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: #650300;
+    h1{
+      font-size: $h1-fz;
+      font-weight: $bold;
+      padding-bottom: $m4-p4;
+    }
+    h3{
+      font-size: $h3-fz;
+      font-weight: $regular;
+    }
+    h5{
+      font-size: $h5-fz;
+      font-weight: $medium;
+    }
+  }
+}

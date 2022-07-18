@@ -69,3 +69,32 @@
     }
   }
 }
+
+.classicFrame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $pt-pb-80 0;
+  text-align: center;
+  h2{
+    padding-bottom: calc(12 * #{$m4-p4});
+    font-size: $h2-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    color: #650300;
+  }
+  .frameIntroList{
+    display: flex;
+    gap: $gap;
+    .frameIntroItem{
+      font-size: $em-fz;
+      font-weight: $black;
+      font-family: $english;
+      font-style: italic;
+      color: #AA0601;
+      img{
+        padding-bottom: calc(2 * #{$m4-p4});
+      }
+    }
+  }
+}

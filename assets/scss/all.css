@@ -155,10 +155,20 @@ a {
   background-color: #AA0601;
   border: none; }
   .buyButton:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #850400; }
 
-.outerWrap {
-  max-width: 1920px; }
+.submitButton {
+  padding: calc(4 * 4px) calc(44 * 4px);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #fff;
+  background-color: #AA0601;
+  border: none; }
+  .submitButton:hover {
+    cursor: pointer;
+    opacity: .8; }
 
 header {
   display: -webkit-box;
@@ -198,6 +208,72 @@ header {
       border-bottom: 1px solid transparent; }
       header .navItem a:hover {
         border-bottom: 1px solid #fff; }
+
+.contactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0;
+  background-color: #FBF2F2; }
+
+.contactBox {
+  width: 33.12%; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  form h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #650300; }
+  form h5 {
+    padding: calc(12 * 4px) 0 calc(2 * 4px);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Noto Sans TC", sans-serif; }
+  form section {
+    width: 100%; }
+    form section p {
+      padding-top: calc(4 * 4px); }
+    form section label {
+      display: inline-block;
+      padding-bottom: calc(2 * 4px);
+      font-family: "Noto Sans TC", sans-serif; }
+    form section input {
+      width: 100%;
+      display: block;
+      padding: calc(1.5 * 4px) 0 calc(1.5 * 4px) calc(3 * 4px);
+      border: 1px solid #000; }
+    form section input[type="checkbox"] {
+      width: auto;
+      display: inline; }
+    form section textarea {
+      width: 636px;
+      height: 136px;
+      display: block;
+      padding-top: calc(1.5 * 4px);
+      padding-left: calc(3 * 4px); }
+    form section .submit {
+      padding-top: calc(12 * 4px); }
+  form .secSubmit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 footer {
   padding: 48px 0 32px;
@@ -285,6 +361,10 @@ footer {
         display: block;
         font-size: 14px; }
 
+.outerWrap {
+  max-width: 1920px;
+  margin: 0 auto; }
+
 .banner {
   height: 787px;
   display: -webkit-box;
@@ -293,6 +373,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Noto Sans TC", sans-serif;
   background-image: url(../images/home-header.png);
   background-size: cover; }
   .banner .bannerText {
@@ -319,6 +400,169 @@ footer {
       font-weight: 400; }
     .banner .bannerText h5 {
       font-size: 20px;
-      font-weight: 500; }
+      font-weight: 500;
+      font-family: "Noto Sans TC", sans-serif; }
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0;
+  background-color: #FBF2F2; }
+  .features h2 {
+    padding-bottom: calc(6 * 4px);
+    font-size: 48px;
+    font-weight: 700;
+    color: #650300;
+    text-align: center;
+    font-family: "Noto Sans TC", sans-serif; }
+  .features .featureList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px; }
+    .features .featureList .featureItem {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .features .featureList .featureItem img {
+        width: 100px;
+        height: 100px; }
+      .features .featureList .featureItem h4 {
+        padding-top: calc(4 * 4px);
+        padding-bottom: calc(2 * 4px);
+        font-size: 24px;
+        font-weight: 700;
+        color: #650300;
+        font-family: "Noto Sans TC", sans-serif; }
+      .features .featureList .featureItem p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Noto Sans TC", sans-serif;
+        text-align: justify; }
+
+.classicFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+  text-align: center; }
+  .classicFrame h2 {
+    padding-bottom: calc(12 * 4px);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #650300; }
+  .classicFrame .frameIntroList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px; }
+    .classicFrame .frameIntroList .frameIntroItem {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: #AA0601; }
+      .classicFrame .frameIntroList .frameIntroItem img {
+        padding-bottom: calc(2 * 4px); }
+
+.coBrandFrame {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url(../images/home-section4-3.jpg);
+  background-size: cover;
+  background-position: center center; }
+  .coBrandFrame h2 {
+    padding-bottom: calc(12 * 4px);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #FFFFFF; }
+  .coBrandFrame .coBrandList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .coBrandFrame .coBrandList .coBrandItem {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: #AA0601; }
+      .coBrandFrame .coBrandList .coBrandItem em {
+        display: block;
+        padding: calc(2 * 4px) 0;
+        background-color: #FFFFFF; }
+
+.recommended {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .recommended h2 {
+    padding-bottom: calc(12 * 4px);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center;
+    color: #650300; }
+  .recommended .reviewList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px; }
+    .recommended .reviewList .reviewItem {
+      border-radius: 4px; }
+      .recommended .reviewList .reviewItem .cardContent {
+        padding: calc(4 * 4px);
+        font-family: "Noto Sans TC", sans-serif;
+        -webkit-box-shadow: 0 2px 6px #00000029;
+                box-shadow: 0 2px 6px #00000029;
+        border-right: 1px solid #DEE2E6;
+        border-left: 1px solid #DEE2E6;
+        border-bottom: 1px solid #DEE2E6; }
+      .recommended .reviewList .reviewItem h6 {
+        padding-bottom: calc(2 * 4px);
+        font-weight: 500; }
+      .recommended .reviewList .reviewItem p {
+        padding-bottom: calc(18 * 4px); }
+      .recommended .reviewList .reviewItem span {
+        font-size: 14px;
+        color: #707070; }
 
 /*# sourceMappingURL=all.css.map */

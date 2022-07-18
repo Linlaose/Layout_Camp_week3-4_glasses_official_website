@@ -149,6 +149,14 @@ a {
   display: block;
   text-decoration: none; }
 
+.buyButton {
+  padding: calc(1.5 * 4px) calc(3 * 4px);
+  color: #fff;
+  background-color: #AA0601;
+  border: none; }
+  .buyButton:hover {
+    cursor: pointer; }
+
 .outerWrap {
   max-width: 1920px; }
 
@@ -276,5 +284,41 @@ footer {
       footer .copyrightItem .termsBox span {
         display: block;
         font-size: 14px; }
+
+.banner {
+  height: 787px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/home-header.png);
+  background-size: cover; }
+  .banner .bannerText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    color: #650300; }
+    .banner .bannerText h1 {
+      font-size: 64px;
+      font-weight: 700;
+      padding-bottom: 4px; }
+    .banner .bannerText h3 {
+      font-size: 36px;
+      font-weight: 400; }
+    .banner .bannerText h5 {
+      font-size: 20px;
+      font-weight: 500; }
 
 /*# sourceMappingURL=all.css.map */

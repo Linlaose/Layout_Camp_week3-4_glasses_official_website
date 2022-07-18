@@ -98,3 +98,34 @@
     }
   }
 }
+
+.coBrandFrame{
+  padding: $pt-pb-80 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/home-section4-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  h2{
+    padding-bottom: calc(12 * #{$m4-p4});
+    font-size: $h2-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    color: #FFFFFF;
+  }
+  .coBrandList{
+    display: flex;
+    .coBrandItem{
+      font-size: $em-fz;
+      font-weight: $black;
+      color: #AA0601;
+      em{
+        display: block;
+        padding: calc(2 * #{$m4-p4}) 0;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+}

@@ -25,3 +25,46 @@
     }
   }
 }
+
+.features{
+  display: flex;
+  justify-content: center;
+  padding: $pt-pb-80 0;
+  background-color: #FBF2F2;
+  h2{
+    padding-bottom: calc(6 * #{$m4-p4});
+    font-size: $h2-fz;
+    font-weight: $bold;
+    color: #650300;
+    text-align: center;
+    font-family: $chinese;
+  }
+  .featureList{
+    display: flex;
+    gap: $gap;
+    .featureItem{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        width: 100px;
+        height: 100px;
+      }
+      h4{
+        padding-top: calc(4 * #{$m4-p4});
+        padding-bottom: calc(2 * #{$m4-p4});
+        font-size: $h4-fz;
+        font-weight: $bold;
+        color: #650300;
+        font-family: $chinese;
+      }
+      p{
+        font-size: $p-fz;
+        font-weight: $regular;
+        font-family: $chinese;
+        text-align: justify;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.contactUs{
+  display: flex;
+  justify-content: center;
+  padding: $pt-pb-80 0;
+  background-color: #FBF2F2;
+}
+
+.contactBox{
+  width: 33.12%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    font-size: $h2-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    color: #650300;
+  }
+  h5{
+    padding: calc(12 * #{$m4-p4}) 0 calc(2 * #{$m4-p4});
+    font-size: $h5-fz;
+    font-weight: $regular;
+    font-family: $chinese;
+  }
+  section{
+    width: 100%;
+    p{
+      padding-top: calc(4 * #{$m4-p4});
+    }
+    label{
+      display: inline-block;
+      padding-bottom: calc(2 * #{$m4-p4});
+      font-family: $chinese;
+    }
+    input{
+      width: 100%;
+      display: block;
+      padding: calc(1.5 * #{$m4-p4}) 0 calc(1.5 * #{$m4-p4}) calc(3 * #{$m4-p4});
+      border: 1px solid #000;
+    }
+    input[type="checkbox"]{
+      width: auto;
+      display: inline;
+      // outline: 2px solid #000;
+    }
+    textarea{
+      width: 636px;
+      height: 136px;
+      display: block;
+      padding-top: calc(1.5 * #{$m4-p4});
+      padding-left: calc(3 * #{$m4-p4});
+    }
+    .submit{
+      padding-top: calc(12 * #{$m4-p4});
+    }
+  }
+  .secSubmit{
+    display: flex;
+    justify-content: center;
+  }
+}

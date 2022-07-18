@@ -1,5 +1,6 @@
 .outerWrap{
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .banner{
@@ -27,6 +28,7 @@
     h5{
       font-size: $h5-fz;
       font-weight: $medium;
+      font-family: $chinese;
     }
   }
 }

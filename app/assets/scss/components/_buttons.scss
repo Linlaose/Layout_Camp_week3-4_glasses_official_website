@@ -5,5 +5,20 @@
   border: none;
   &:hover{
     cursor: pointer;
+    background-color: #850400;
+  }
+}
+
+.submitButton {
+  padding: calc(4 * #{$m4-p4}) calc(44 * #{$m4-p4});
+  font-size: $p-fz;
+  font-weight: $bold;
+  font-family: $chinese;
+  color: #fff;
+  background-color: #AA0601;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    opacity: .8;
   }
 }

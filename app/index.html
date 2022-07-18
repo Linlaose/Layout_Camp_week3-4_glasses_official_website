@@ -154,6 +154,74 @@ current: index
       <!-- reviewBox end -->
     </div>
     <!-- recommended end -->
+    <div class="contactUs">
+      <div class="contactBox">
+        <form action="post">
+          <h2>聯絡我們</h2>
+          <h5>
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </h5>
+          <section>
+            <p>
+              <label for="name">
+                <span>姓名</span>
+              </label>
+              <input
+                type="text"
+                placeholder="陳小明"
+                name="userName"
+                id="name"
+              />
+            </p>
+            <p>
+              <label for="mobile">
+                <span>聯絡電話</span>
+              </label>
+              <input
+                type="tel"
+                placeholder="0912-345-678"
+                name="userMobile"
+                id="mobile"
+              />
+            </p>
+            <p>
+              <label for="email">
+                <span>電子郵件</span>
+              </label>
+              <input
+                type="email"
+                placeholder="example@email.com"
+                name="userMail"
+                id="email"
+              />
+            </p>
+            <p>
+              <label for="feedback">
+                <span>意見反應</span>
+              </label>
+              <textarea
+                placeholder="請輸入您的意見"
+                name="feedback"
+                id="feedback"
+              ></textarea>
+            </p>
+            <p>
+              <input type="checkbox" name="userAgreement" id="agreeTerms" />
+              <label for="agreeTerms">
+                <span
+                  >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span
+                >
+              </label>
+            </p>
+          </section>
+          <section class="secSubmit">
+            <p class="submit">
+              <button class="submitButton" type="submit">確認送出</button>
+            </p>
+          </section>
+        </form>
+      </div>
+    </div>
   </main>
   <!-- main end -->
 </div>

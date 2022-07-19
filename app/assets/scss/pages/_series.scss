@@ -3,11 +3,25 @@
   border-left: 1px solid #DCDCDC;
   border-bottom: 8px solid #AA0601;
 }
-
 .borderTransparent{
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   border-bottom: 8px solid transparent;
+}
+
+.over{
+  overflow: hidden;
+}
+
+.imgHide{
+  display: none;
+}
+
+.listHide{
+  display: none;
+}
+.listShow{
+  display: flex;
 }
 
 .series{
@@ -120,6 +134,58 @@
           cursor: pointer;
           color: #fff;
           background-color: #000000;
+        }
+      }
+    }
+}
+  .sunglassesProductList {
+    gap: $gap;
+    display: flex;
+    flex-wrap: wrap;
+    .sunglassesProductItem {
+      max-width: 32.099%;
+      padding-bottom: calc(14 * #{$m4-p4});
+      p {
+        display: flex;
+        justify-content: space-between;
+      }
+      .productName {
+        font-size: $series-span-fz;
+        font-weight: $regular;
+        font-family: $english;
+      }
+      .productPrice {
+        font-size: $series-span-fz;
+        font-weight: $medium;
+        font-family: $english;
+        color: #AA0601;
+      }
+      .colors {
+        &:hover::before {
+          cursor: pointer;
+          opacity: .8;
+        }
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-color: #5F3E2D;
+          border-radius: 4px;
+        }
+        &:hover::after {
+          cursor: pointer;
+          opacity: .8;
+        }
+        &::after {
+          content: '';
+          position: relative;
+          left: 8px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-color: #AA0601;
+          border-radius: 4px;
         }
       }
     }

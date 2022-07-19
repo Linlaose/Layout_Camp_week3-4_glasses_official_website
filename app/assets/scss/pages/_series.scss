@@ -1,0 +1,21 @@
+.border-show{
+  border-right: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  border-bottom: 8px solid #AA0601;
+}
+
+.series{
+  display: flex;
+  justify-content: center;
+  .seriesItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $series-h3-fz;
+    font-weight: $medium;
+    font-family: $english;
+    a{
+      padding: calc(6 * #{$m4-p4}) calc(37.5 * #{$m4-p4});
+    }
+  }
+}

@@ -22,3 +22,29 @@
     opacity: .8;
   }
 }
+
+.previousButton{
+  padding: calc(2.75 * #{$m4-p4}) calc(3 * #{$m4-p4});
+  font-size: $series-h5-fz;
+  font-family: $english;
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #555555;
+  &:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+  }
+}
+
+.nextButton{
+  padding: calc(2.75 * #{$m4-p4}) calc(3 * #{$m4-p4});
+  font-size: $series-h5-fz;
+  font-family: $english;
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #555555;
+  &:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+  }
+}

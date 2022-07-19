@@ -1,7 +1,13 @@
-.border-show{
+.borderShow{
   border-right: 1px solid #DCDCDC;
   border-left: 1px solid #DCDCDC;
   border-bottom: 8px solid #AA0601;
+}
+
+.borderTransparent{
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 8px solid transparent;
 }
 
 .series{
@@ -14,8 +20,12 @@
     font-size: $series-h3-fz;
     font-weight: $medium;
     font-family: $english;
+    h3{
+      width: 33.333%;
+      text-align: center;
+    }
     a{
-      padding: calc(6 * #{$m4-p4}) calc(37.5 * #{$m4-p4});
+      padding: calc(6 * #{$m4-p4}) 0;
     }
   }
 }
@@ -24,5 +34,94 @@
   display: flex;
   img{
     max-width: 50%;
+  }
+}
+
+.productBox{
+  padding: $pt-pb-80 0;
+  margin: 0 auto;
+  h2{
+    font-size: $series-h2-fz;
+    font-weight: $medium;
+    font-family: $english;
+    text-align: center;
+  }
+  h3{
+    padding-bottom: calc(8 * #{$m4-p4});
+    font-size: $series-h3-fz;
+    font-weight: $regular;
+    font-family: $chinese;
+    text-align: center;
+  }
+  .opticalProductList{
+    gap: $gap;
+    display: flex;
+    flex-wrap: wrap;
+    .opticalProductItem{
+      max-width: 23.6%;
+      padding-bottom: calc(14 * #{$m4-p4});
+      p{
+        display: flex;
+        justify-content: space-between;
+      }
+      .productName{
+        font-size: $series-span-fz;
+        font-weight: $regular;
+        font-family: $english;
+      }
+      .productPrice{
+        font-size: $series-span-fz;
+        font-weight: $medium;
+        font-family: $english;
+        color: #AA0601;
+      }
+      .colors{
+        &:hover::before {
+          cursor: pointer;
+          opacity: .8;
+        }
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-color: #5F3E2D;
+          border-radius: 4px;
+        }
+        &:hover::after{
+          cursor: pointer;
+          opacity: .8;
+        }
+        &::after{
+          content: '';
+          position: relative;
+          left: 8px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-color: #AA0601;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .pageController{
+    display: flex;
+    justify-content: center;
+    .pageList{
+      display: flex;
+      .pageItem{
+        padding: calc(3 * #{$m4-p4}) calc(4 * #{$m4-p4});
+        font-size: $series-h6-fz;
+        font-family: $english;
+        color: #555555;
+        border: 1px solid #555555;
+        &:hover{
+          cursor: pointer;
+          color: #fff;
+          background-color: #000000;
+        }
+      }
+    }
   }
 }

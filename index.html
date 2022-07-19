@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="./assets/images/My Glasses.ico" />
+    <meta name="description" content="看得清，才能看得遠" />
+
+    <meta property="og:title" content="眼鏡官網v3" />
+    <meta property="og:description" content="眼鏡官網v3，看得清才能看得遠" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+
+    <link href="./assets/images/logo-white.png" rel="apple-touch-icon" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,24 +20,26 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header outerWrap">
       <!-- header -->
       <div class="headerBox container">
         <!-- headerBox -->
-        <img
-          class="headerLogo"
-          src="./assets/images/logo-white.png"
-          alt="logo"
-        />
+        <a href="index.html">
+          <img
+            class="headerLogo"
+            src="./assets/images/logo-white.png"
+            alt="logo"
+          />
+        </a>
         <nav>
           <!-- nav -->
           <ul class="navList">
             <!-- navList -->
             <li class="navItem">
-              <p><a href="#">系列鏡框</a></p>
-              <p><a href="#">門市據點</a></p>
-              <p><a href="#">部落格</a></p>
-              <p><a href="#">常見問題</a></p>
+              <p><a href="series.html">系列鏡框</a></p>
+              <p><a href="stores.html">門市據點</a></p>
+              <p><a href="blogs.html">部落格</a></p>
+              <p><a href="faq.html">常見問題</a></p>
             </li>
           </ul>
           <!-- navList end -->
@@ -188,13 +201,17 @@
     </div>
     <!-- recommended end -->
     <div class="contactUs">
+      <!-- contactUs -->
       <div class="contactBox">
+        <!-- contactBox -->
         <form action="post">
+          <!-- form -->
           <h2>聯絡我們</h2>
           <h5>
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </h5>
           <section>
+            <!-- section -->
             <p>
               <label for="name">
                 <span>姓名</span>
@@ -247,21 +264,27 @@
               </label>
             </p>
           </section>
+          <!-- section end -->
           <section class="secSubmit">
+            <!-- section -->
             <p class="submit">
               <button class="submitButton" type="submit">確認送出</button>
             </p>
           </section>
+          <!-- section end -->
         </form>
+        <!-- form end -->
       </div>
+      <!-- contactBox end -->
     </div>
+    <!-- contactUs end -->
   </main>
   <!-- main end -->
 </div>
 <!-- outerWrap end -->
 
 
-    <footer class="footer">
+    <footer class="footer outerWrap">
       <!-- footer -->
       <div class="footerBox container">
         <!-- footerBox -->

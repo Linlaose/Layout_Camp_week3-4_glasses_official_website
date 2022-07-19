@@ -170,6 +170,28 @@ a {
     cursor: pointer;
     opacity: .8; }
 
+.previousButton {
+  padding: calc(2.75 * 4px) calc(3 * 4px);
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #555555; }
+  .previousButton:hover {
+    cursor: pointer;
+    background-color: #F2F2F2; }
+
+.nextButton {
+  padding: calc(2.75 * 4px) calc(3 * 4px);
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #555555; }
+  .nextButton:hover {
+    cursor: pointer;
+    background-color: #F2F2F2; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +419,8 @@ footer {
       padding-bottom: 4px; }
     .banner .bannerText h3 {
       font-size: 36px;
-      font-weight: 400; }
+      font-weight: 400;
+      font-family: "Noto Sans TC", sans-serif; }
     .banner .bannerText h5 {
       font-size: 20px;
       font-weight: 500;
@@ -565,10 +588,29 @@ footer {
         font-size: 14px;
         color: #707070; }
 
-.border-show {
+.borderShow {
   border-right: 1px solid #DCDCDC;
   border-left: 1px solid #DCDCDC;
   border-bottom: 8px solid #AA0601; }
+
+.borderTransparent {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 8px solid transparent; }
+
+.over {
+  overflow: hidden; }
+
+.imgHide {
+  display: none; }
+
+.listHide {
+  display: none; }
+
+.listShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .series {
   display: -webkit-box;
@@ -590,7 +632,149 @@ footer {
     font-size: 32px;
     font-weight: 500;
     font-family: "Roboto", sans-serif; }
+    .series .seriesItem h3 {
+      width: 33.333%;
+      text-align: center; }
     .series .seriesItem a {
-      padding: calc(6 * 4px) calc(37.5 * 4px); }
+      padding: calc(6 * 4px) 0; }
+
+.brandImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .brandImage img {
+    max-width: 50%; }
+
+.productBox {
+  padding: 80px 0;
+  margin: 0 auto; }
+  .productBox h2 {
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-align: center; }
+  .productBox h3 {
+    padding-bottom: calc(8 * 4px);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center; }
+  .productBox .opticalProductList {
+    gap: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .productBox .opticalProductList .opticalProductItem {
+      max-width: 23.6%;
+      padding-bottom: calc(14 * 4px); }
+      .productBox .opticalProductList .opticalProductItem p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .productBox .opticalProductList .opticalProductItem .productName {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif; }
+      .productBox .opticalProductList .opticalProductItem .productPrice {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        color: #AA0601; }
+      .productBox .opticalProductList .opticalProductItem .colors:hover::before {
+        cursor: pointer;
+        opacity: .8; }
+      .productBox .opticalProductList .opticalProductItem .colors::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px; }
+      .productBox .opticalProductList .opticalProductItem .colors:hover::after {
+        cursor: pointer;
+        opacity: .8; }
+      .productBox .opticalProductList .opticalProductItem .colors::after {
+        content: '';
+        position: relative;
+        left: 8px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: #AA0601;
+        border-radius: 4px; }
+  .productBox .pageController {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .productBox .pageController .pageList {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .productBox .pageController .pageList .pageItem {
+        padding: calc(3 * 4px) calc(4 * 4px);
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: #555555;
+        border: 1px solid #555555; }
+        .productBox .pageController .pageList .pageItem:hover {
+          cursor: pointer;
+          color: #fff;
+          background-color: #000000; }
+  .productBox .sunglassesProductList {
+    gap: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .productBox .sunglassesProductList .sunglassesProductItem {
+      max-width: 32.099%;
+      padding-bottom: calc(14 * 4px); }
+      .productBox .sunglassesProductList .sunglassesProductItem p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .productBox .sunglassesProductList .sunglassesProductItem .productName {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif; }
+      .productBox .sunglassesProductList .sunglassesProductItem .productPrice {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        color: #AA0601; }
+      .productBox .sunglassesProductList .sunglassesProductItem .colors:hover::before {
+        cursor: pointer;
+        opacity: .8; }
+      .productBox .sunglassesProductList .sunglassesProductItem .colors::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px; }
+      .productBox .sunglassesProductList .sunglassesProductItem .colors:hover::after {
+        cursor: pointer;
+        opacity: .8; }
+      .productBox .sunglassesProductList .sunglassesProductItem .colors::after {
+        content: '';
+        position: relative;
+        left: 8px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: #AA0601;
+        border-radius: 4px; }
 
 /*# sourceMappingURL=all.css.map */

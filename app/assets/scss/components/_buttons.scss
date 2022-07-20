@@ -48,3 +48,17 @@
     background-color: #F2F2F2;
   }
 }
+
+.storeDetails{
+  padding: calc(4 * #{$m4-p4}) calc(42.5 * #{$m4-p4});
+  font-size: $series-h5-fz;
+  font-family: $chinese;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    opacity: .8;
+  }
+}

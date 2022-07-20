@@ -1,11 +1,57 @@
 .storeBox{
   margin: 0 auto;
-  padding: calc(24 * #{$m4-p4}) 0 $pt-pb-80;
+  padding: calc(24 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
   h2{
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;
     font-weight: $bold;
     font-family: $chinese;
     border-left: 8px solid #9F1213;
+  }
+  .storeList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .storeItem{
+      width: 32.1%;
+      padding-bottom: calc(12 * #{$m4-p4});
+    }
+    .storeName{
+      padding: calc(2 * #{$m4-p4}) 0 calc(2 * #{$m4-p4}) calc(6 * #{$m4-p4});
+      font-size: $h4-fz;
+      font-family: $chinese;
+      border: 1px solid #00000020;
+    }
+    .storeH5{
+      display: flex;
+      font-size: $h5-fz;
+      align-items: center;
+      color: #212529;
+      a{
+        color: #212529;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .storeLocationH5{
+      display: flex;
+      font-size: $h5-fz;
+      color: #212529;
+    }
+    .storePhone,
+    .storeClock,
+    .storeLocation{
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+  .storeInfoList{
+    padding: calc(3 * #{$m4-p4}) calc(6 * #{$m4-p4});
+    border: 1px solid #00000020;
+    .storeInfoItem{
+      padding: $m4-p4 0;
+    }
   }
 }

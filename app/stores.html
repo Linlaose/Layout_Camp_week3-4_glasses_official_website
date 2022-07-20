@@ -4,3 +4,67 @@ layout: ./app/layout.ejs
 engine: ejs
 current: stores
 ---
+
+<div class="outerWrap">
+  <main>
+    <div class="storeBox container">
+      <h2>門市據點</h2>
+      <form action="post" class="storeForm">
+        <section>
+          <p>
+            <label for="card" class="district">
+              <span>選擇地區</span>
+            </label>
+            <select name="userCard" id="card">
+              <option value="taipei">台北市</option>
+              <option value="taichung">台中市</option>
+              <option value="kaohsiung">高雄市</option>
+            </select>
+          </p>
+        </section>
+      </form>
+      <ul class="storeList">
+        <li class="storeItem">
+          <img src="./assets/images/store-1.png" alt="台北中山旗艦店" />
+          <h4>台北中山旗艦店</h4>
+          <h5><a href="tel:+(02)000-1234">電話：(02)000-1234</a></h5>
+          <h5>營業時間：10:00-21:00</h5>
+          <h5>地址：台北市中山區南京東路25巷2-1號</h5>
+          <button class="storeDetails">詳細資訊</button>
+        </li>
+        <li class="storeItem">
+          <img src="./assets/images/store-2.png" alt="台北綠園店" />
+          <h4>台北綠園店</h4>
+          <h5><a href="tel:+(02)000-2345">電話：(02)000-2345</a></h5>
+          <h5>營業時間：10:00-21:00</h5>
+          <h5>地址：台北市中正區復興南路 132-1 號</h5>
+          <button class="storeDetails">詳細資訊</button>
+        </li>
+        <li class="storeItem">
+          <img src="./assets/images/store-3.png" alt="台中清水旗艦店" />
+          <h4>台中清水旗艦店</h4>
+          <h5><a href="tel:+(02)000-1234">電話：(02)000-1234</a></h5>
+          <h5>營業時間：10:00-21:00</h5>
+          <h5>地址：台中市清水區經南一路 23 號 8 樓</h5>
+          <button class="storeDetails">詳細資訊</button>
+        </li>
+        <li class="storeItem">
+          <img src="./assets/images/store-4.png" alt="高雄中正形象店" />
+          <h4>高雄中正形象店</h4>
+          <h5><a href="tel:+(02)000-2345">電話：(02)000-2345</a></h5>
+          <h5>營業時間：10:00-21:00</h5>
+          <h5>地址：高雄市苓雅區中正路 38 號 12 樓</h5>
+          <button class="storeDetails">詳細資訊</button>
+        </li>
+        <li class="storeItem">
+          <img src="./assets/images/store-5.png" alt="高雄夢時代店" />
+          <h4>高雄夢時代店</h4>
+          <h5><a href="tel:+(02)000-1234">電話：(02)000-1234</a></h5>
+          <h5>營業時間：10:00-21:00</h5>
+          <h5>地址：高雄市前鎮區中華一路 63 號 6 樓</h5>
+          <button class="storeDetails">詳細資訊</button>
+        </li>
+      </ul>
+    </div>
+  </main>
+</div>

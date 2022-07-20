@@ -1,0 +1,11 @@
+.storeBox{
+  margin: 0 auto;
+  padding: calc(24 * #{$m4-p4}) 0 $pt-pb-80;
+  h2{
+    padding-left: calc(4 * #{$m4-p4});
+    font-size: $h2-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    border-left: 8px solid #9F1213;
+  }
+}

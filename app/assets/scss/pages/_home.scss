@@ -92,8 +92,9 @@
   }
   .frameIntroList{
     display: flex;
-    gap: $gap;
+    justify-content: space-between;
     .frameIntroItem{
+      width: 32.1%;
       font-size: $em-fz;
       font-weight: $black;
       font-family: $english;

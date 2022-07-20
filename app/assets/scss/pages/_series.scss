@@ -37,9 +37,15 @@
     h3{
       width: 33.333%;
       text-align: center;
+      &:hover {
+        border-right: 1px solid #DCDCDC;
+        border-left: 1px solid #DCDCDC;
+        border-bottom: 8px solid #AA0601;
+      }
     }
     a{
       padding: calc(6 * #{$m4-p4}) 0;
+      color: #000000;
     }
   }
 }

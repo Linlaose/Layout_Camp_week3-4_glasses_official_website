@@ -885,5 +885,24 @@ footer {
     border: 1px solid #00000020; }
     .storeBox .storeInfoList .storeInfoItem {
       padding: 4px 0; }
+  .storeBox .singleList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: calc(12 * 4px); }
+    .storeBox .singleList .singleItem {
+      width: 40.5%;
+      padding: 0; }
+    .storeBox .singleList .googleMap {
+      width: 57.5%;
+      max-height: 414px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+main .container .listHide {
+  display: none; }
 
 /*# sourceMappingURL=all.css.map */

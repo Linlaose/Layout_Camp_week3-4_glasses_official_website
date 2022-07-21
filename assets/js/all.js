@@ -13,7 +13,9 @@ var opticalList = document.querySelector('.opticalProductList');
 var sunglassesList = document.querySelector('.sunglassesList');
 var labelText = document.querySelector('.district > span');
 var ulList = document.querySelector('.storeList');
-var selectList = document.querySelector('#card'); // 觸發產品頁籤
+var selectList = document.querySelector('#card');
+var storeList = document.querySelector('.storeList');
+var singleList = document.querySelector('.singleList'); // 觸發產品頁籤
 
 if (seriesItem) {
   //先加上 if 判斷，是為了避免頁面切換之後找不到原有的元素而跳錯誤
@@ -55,6 +57,8 @@ if (ulList) {
       var store = e.target.previousElementSibling.previousElementSibling.textContent;
       labelText.textContent = '選擇分店';
       selectList.innerHTML = "<option value=\"taipei\">".concat(store, "</option>");
+      storeList.classList.add('listHide');
+      singleList.classList.remove('listHide');
     }
   });
 }

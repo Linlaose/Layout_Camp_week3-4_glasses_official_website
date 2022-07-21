@@ -13,6 +13,8 @@ const sunglassesList = document.querySelector('.sunglassesList');
 const labelText = document.querySelector('.district > span');
 const ulList = document.querySelector('.storeList');
 const selectList = document.querySelector('#card');
+const storeList = document.querySelector('.storeList');
+const singleList = document.querySelector('.singleList');
 
 
 // 觸發產品頁籤
@@ -56,6 +58,8 @@ if (ulList) {
       let store = e.target.previousElementSibling.previousElementSibling.textContent
       labelText.textContent = '選擇分店';
       selectList.innerHTML = `<option value="taipei">${store}</option>`;
+      storeList.classList.add('listHide');
+      singleList.classList.remove('listHide');
     }
   });
 }

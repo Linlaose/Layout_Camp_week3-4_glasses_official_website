@@ -54,4 +54,26 @@
       padding: $m4-p4 0;
     }
   }
+  .singleList{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(12 * #{$m4-p4});
+    .singleItem{
+      width: 40.5%;
+      padding: 0;
+    }
+    .googleMap{
+      width: 57.5%;
+      max-height: 414px;
+      object-fit: cover;
+    }
+  }
+}
+
+main{
+  .container{
+    .listHide{
+      display: none;
+    }
+  }
 }

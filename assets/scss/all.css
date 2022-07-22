@@ -905,4 +905,37 @@ footer {
 main .container .listHide {
   display: none; }
 
+.faqFlex {
+  width: 67.5%;
+  margin: 0 auto; }
+
+.qaContainer {
+  width: 66%; }
+
+.faqBox {
+  padding: calc(24 * 4px) 0 calc(8 * 4px); }
+  .faqBox h2 {
+    padding-left: calc(4 * 4px);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    border-left: 8px solid #9F1213; }
+  .faqBox h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", sans-serif;
+    padding-top: calc(8 * 4px); }
+  .faqBox .qaList {
+    padding: calc(6 * 4px) 0 calc(4 * 4px); }
+    .faqBox .qaList .qaItem {
+      padding-bottom: calc(8 * 4px); }
+      .faqBox .qaList .qaItem h5 {
+        padding-bottom: calc(2 * 4px);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Noto Sans TC", sans-serif; }
+      .faqBox .qaList .qaItem p {
+        font-size: 16px;
+        font-family: "Noto Sans TC", sans-serif; }
+
 /*# sourceMappingURL=all.css.map */

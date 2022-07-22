@@ -1,0 +1,40 @@
+.faqFlex{
+  width: 67.5%;
+  margin: 0 auto;
+}
+.qaContainer{
+  width: 66%;
+}
+
+.faqBox {
+  padding: calc(24 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
+  h2 {
+    padding-left: calc(4 * #{$m4-p4});
+    font-size: $h2-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    border-left: 8px solid #9F1213;
+  }
+  h4{
+    font-size: $h4-fz;
+    font-weight: $bold;
+    font-family: $chinese;
+    padding-top: calc(8 * #{$m4-p4});
+  }
+  .qaList{
+    padding: calc(6 * #{$m4-p4}) 0 calc(4 * #{$m4-p4});
+    .qaItem{
+      padding-bottom: calc(8 * #{$m4-p4});
+      h5{
+        padding-bottom: calc(2 * #{$m4-p4});
+        font-size: $h5-fz;
+        font-weight: $bold;
+        font-family: $chinese;
+      }
+      p{
+        font-size: $p-fz;
+        font-family: $chinese;
+      }
+    }
+  }
+}

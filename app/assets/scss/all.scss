@@ -11,3 +11,9 @@
 @import './pages/stores';
 @import './pages/faq';
 @import './pages/blog';
+
+// 以後要定型匯入順序
+// mixin 和 variables 先匯入
+// 再來 css reset
+// 之後各種 layout
+// 最後是首頁與頁面

@@ -17,7 +17,12 @@
         font-size: $h5-fz;
         font-weight: $bold;
         font-family: $chinese;
+      }
+      a{
         color: #fff;
+        &:hover{
+          opacity: .8;
+        }
       }
     }
   }

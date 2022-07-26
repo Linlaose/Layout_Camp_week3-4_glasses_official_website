@@ -50,7 +50,8 @@
 }
 
 .storeDetails{
-  padding: calc(4 * #{$m4-p4}) calc(42.5 * #{$m4-p4});
+  width: 100%;
+  padding: calc(4 * #{$m4-p4}) 0;
   font-size: $series-h5-fz;
   font-family: $chinese;
   line-height: 1.4;

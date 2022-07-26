@@ -3,10 +3,16 @@
   justify-content: center;
   padding: $pt-pb-80 0;
   background-color: #FBF2F2;
+  @include pad{
+    padding: $pt-pb-80 calc(3 * #{$m4-p4});
+  }
 }
 
 .contactBox{
   width: 33.43%;
+  @include pad{
+    width: auto;
+  }
 }
 
 .contactForm{
@@ -39,12 +45,13 @@
       width: 100%;
       display: block;
       padding: calc(1.5 * #{$m4-p4}) 0 calc(1.5 * #{$m4-p4}) calc(3 * #{$m4-p4});
+      background-color: #FBF2F2;
       border: 1px solid #000;
     }
     input[type="checkbox"]{
       width: auto;
       display: inline;
-      // outline: 2px solid #000;
+      box-shadow: (0 0 0 1.5px #000);
     }
     textarea{
       width: 100%;
@@ -52,6 +59,7 @@
       display: block;
       padding-top: calc(1.5 * #{$m4-p4});
       padding-left: calc(3 * #{$m4-p4});
+      background-color: #FBF2F2;
     }
     .submit{
       padding-top: calc(12 * #{$m4-p4});

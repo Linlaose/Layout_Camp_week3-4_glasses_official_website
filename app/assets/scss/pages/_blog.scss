@@ -34,7 +34,7 @@
 
 .blogBox {
   margin: 0 auto;
-  padding: calc(24 * #{$m4-p4}) 0 calc(20 * #{$m4-p4});
+  padding: calc(24 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(20 * #{$m4-p4});
   h2 {
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;
@@ -43,7 +43,6 @@
     border-left: 8px solid #9F1213;
   }
   .blogList{
-    // display: none;//記得刪除
     padding: calc(8 * #{$m4-p4}) 0 calc(16 * #{$m4-p4});
     .blogItem{
       padding-bottom: calc(15 * #{$m4-p4});
@@ -52,6 +51,7 @@
     }
     .coverImage{
       width: 49.1%;
+      object-fit: cover;
     }
     .blogContent{
       position: relative;
@@ -89,6 +89,9 @@
         font-weight: $black;
         font-family: $english;
         color: #650300;
+        @include pad{
+          bottom: -10px;
+        }
         &:hover{
           color: #ff0000;
         }

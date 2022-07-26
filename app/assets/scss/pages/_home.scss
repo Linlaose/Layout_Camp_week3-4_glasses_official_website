@@ -1,20 +1,14 @@
-.outerWrap{
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .banner{
   height: 787px;
-  display: flex;
-  justify-content: center;
   font-family: $chinese;
   background-image: url(../images/home-header.png);
   background-size: cover;
   .bannerText{
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
-    align-items: end;
     color: #650300;
     h1{
       font-size: $h1-fz;
@@ -93,6 +87,11 @@
   .frameIntroList{
     display: flex;
     justify-content: space-between;
+    @include pad{
+      gap: $gap;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .frameIntroItem{
       width: 32.1%;
       font-size: $em-fz;
@@ -100,6 +99,9 @@
       font-family: $english;
       font-style: italic;
       color: #AA0601;
+      @include pad{
+        width: 34%;
+      }
       img{
         padding-bottom: calc(2 * #{$m4-p4});
       }
@@ -155,8 +157,15 @@
   }
   .reviewList{
     display: flex;
+    @include pad{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     gap: $gap;
     .reviewItem{
+      @include pad{
+        width: 33%;
+      }
       border-radius: 4px;
       .cardContent{
         padding: calc(4 * #{$m4-p4});

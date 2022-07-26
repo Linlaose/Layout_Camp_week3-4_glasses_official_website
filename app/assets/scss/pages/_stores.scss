@@ -1,6 +1,6 @@
 .storeBox{
   margin: 0 auto;
-  padding: calc(24 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
+  padding: calc(24 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(8 * #{$m4-p4});
   h2{
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;

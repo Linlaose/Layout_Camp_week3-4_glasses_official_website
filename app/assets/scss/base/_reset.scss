@@ -147,7 +147,9 @@ body {
 }
 
 .container{
-  width: 67.5%;
+  max-width: 1320px;
+  padding: 0 calc(3 * #{$m4-p4});
+  margin: 0 auto;
 }
 
 img {

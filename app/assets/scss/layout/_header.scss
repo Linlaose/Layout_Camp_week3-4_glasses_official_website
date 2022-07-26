@@ -1,6 +1,4 @@
 header{
-  display: flex;
-  justify-content: center;
   font-size: $h5-fz;
   font-weight: $regular;
   font-family: $chinese;
@@ -12,7 +10,7 @@ header{
   .headerBox{
     display: flex;
     justify-content: space-between;
-    padding: calc(4 * #{$m4-p4}) 0;
+    padding: calc(4 * #{$m4-p4}) calc(3 * #{$m4-p4});
   }
   .headerLogo{
     width: 80px;

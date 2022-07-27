@@ -15,6 +15,10 @@
     .storeItem{
       width: 32.1%;
       padding-bottom: calc(12 * #{$m4-p4});
+      @include mobile {
+        width: 48%;
+        padding-bottom: calc(6 * #{$m4-p4});
+      }
     }
     .storeName{
       padding: calc(2 * #{$m4-p4}) 0 calc(2 * #{$m4-p4}) calc(6 * #{$m4-p4});
@@ -58,14 +62,38 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: calc(12 * #{$m4-p4});
+    @include mobile{
+      flex-direction: column;
+    }
     .singleItem{
       width: 40.5%;
       padding: 0;
+      @include mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .singleStore{
+        @include mobile{
+          width: 48%;
+        }
+      }
+      img{
+        @include mobile{
+          max-width: 48%;
+          object-fit: cover;
+        }
+      }
+
     }
     .googleMap{
       width: 57.5%;
       max-height: 414px;
       object-fit: cover;
+      @include mobile{
+        width: 100%;
+        padding-top: calc(6 * #{$m4-p4});
+      }
     }
   }
 }

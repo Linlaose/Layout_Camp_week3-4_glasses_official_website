@@ -25,6 +25,14 @@
 }
 
 .series{
+  .seriesList{
+    max-width: 1320px;
+    padding: 0 calc(3 * #{$m4-p4});
+    margin: 0 auto;
+    @include mobile {
+      padding: 0;
+    }
+  }
   .seriesItem{
     display: flex;
     justify-content: space-between;
@@ -32,6 +40,9 @@
     font-size: $series-h3-fz;
     font-weight: $medium;
     font-family: $english;
+    @include mobile {
+      font-size: $h4-fz;
+    }
     h3{
       width: 33.333%;
       text-align: center;
@@ -44,6 +55,9 @@
     a{
       padding: calc(6 * #{$m4-p4}) 0;
       color: #000000;
+      @include mobile {
+        padding: calc(4 * #{$m4-p4}) 0;
+      }
     }
   }
 }
@@ -81,6 +95,10 @@
     .opticalProductItem{
       max-width: 23.6%;
       padding-bottom: calc(14 * #{$m4-p4});
+      @include mobile{
+        max-width: 46%;
+        padding-bottom: 16px;
+      }
       p{
         display: flex;
         justify-content: space-between;
@@ -129,6 +147,9 @@
   .pageController{
     display: flex;
     justify-content: center;
+    @include mobile{
+      padding-top: 64px;
+    }
     .pageList{
       display: flex;
       .pageItem{
@@ -155,6 +176,10 @@
     .sunglassesProductItem {
       max-width: 32.099%;
       padding-bottom: calc(14 * #{$m4-p4});
+      @include mobile{
+        max-width: 46%;
+        padding-bottom: calc(4 * #{$m4-p4});
+      }
       p {
         display: flex;
         justify-content: space-between;
@@ -199,5 +224,29 @@
         }
       }
     }
+  }
+}
+
+.opticalImageHeader{
+  @include mobile {
+    display: none;
+  }
+}
+.opticalImageHeaderSm{
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+
+.sunglassesImageHeader{
+  @include mobile{
+    display: none;
+  }
+}
+.sunglassesImageHeaderSm{
+  display: none;
+  @include mobile{
+    display: block;
   }
 }

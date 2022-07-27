@@ -22,6 +22,9 @@ footer{
   }
   .mediaGap{
     gap: 32px;
+    @include mobile{
+      gap: calc(4 * #{$m4-p4});
+    }
     a{
       &:hover{
         opacity: .8;

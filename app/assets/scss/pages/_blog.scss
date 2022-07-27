@@ -35,6 +35,9 @@
 .blogBox {
   margin: 0 auto;
   padding: calc(24 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(20 * #{$m4-p4});
+  @include mobile{
+    padding: calc(20 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(20 * #{$m4-p4});
+  }
   h2 {
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;
@@ -44,6 +47,9 @@
   }
   .blogList{
     padding: calc(8 * #{$m4-p4}) 0 calc(16 * #{$m4-p4});
+    @include mobile{
+      padding: calc(10 * #{$m4-p4}) 0 calc(5 * #{$m4-p4});
+    }
     .blogItem{
       padding-bottom: calc(15 * #{$m4-p4});
       display: flex;
@@ -60,6 +66,9 @@
         font-size: $series-h3-fz;
         font-family: $chinese;
         color: #650300;
+        @include mobile{
+          font-size: $h4-fz;
+        }
       }
       .englishTitle{
         padding-bottom: calc(4 * #{$m4-p4});
@@ -69,6 +78,9 @@
         font-size: $h5-fz;
         font-weight: $medium;
         font-family: $english;
+        @include mobile{
+          font-size: $p-fz;
+        }
       }
       .postDate{
         font-size: $p-fz;
@@ -80,6 +92,15 @@
         font-size: $h5-fz;
         font-family: $chinese;
         color: #555555;
+        @include mobile{
+          display: none;
+        }
+      }
+      .abstractSm{
+        display: none;
+        @include mobile{
+          display: block;
+        }
       }
       .more{
         position: absolute;
@@ -92,8 +113,16 @@
         @include pad{
           bottom: -10px;
         }
+        @include mobile{
+          display: none;
+        }
         &:hover{
           color: #ff0000;
+        }
+      }
+      .moreSm{
+        @include mobile{
+          display: inline;
         }
       }
     }

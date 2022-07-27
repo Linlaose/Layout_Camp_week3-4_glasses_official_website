@@ -13,6 +13,9 @@
   @include pad{
     width: auto;
   }
+  @include mobile{
+    width: 80%;
+  }
 }
 
 .contactForm{
@@ -63,6 +66,9 @@
     }
     .submit{
       padding-top: calc(12 * #{$m4-p4});
+      @include mobile{
+        width: 58%;
+      }
     }
   }
   .secSubmit{

@@ -150,6 +150,12 @@ body {
   max-width: 1320px;
   padding: 0 calc(3 * #{$m4-p4});
   margin: 0 auto;
+  @include pad{
+    max-width: 960px;
+  }
+  @include mobile{
+    max-width: 720px
+  }
 }
 
 img {

@@ -2,10 +2,19 @@
   max-width: 1320px;
   padding: 0 calc(3 * #{$m4-p4});
   margin: 0 auto;
+  @include pad{
+    max-width: 960px;
+  }
+  @include mobile{
+    max-width: 720px;
+  }
 }
 
 .faqBox {
   padding: calc(24 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
+  @include mobile{
+    padding: calc(20 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
+  }
   h2 {
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;

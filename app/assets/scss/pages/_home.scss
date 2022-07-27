@@ -3,6 +3,10 @@
   font-family: $chinese;
   background-image: url(../images/home-header.png);
   background-size: cover;
+  @include mobile{
+    background-image: url(../images/home-header-sm.png);
+    transition: background-image .5s;
+  }
   .bannerText{
     height: 100%;
     display: flex;
@@ -44,11 +48,17 @@
   .featureList{
     display: flex;
     gap: $gap;
+    @include mobile {
+      flex-wrap: wrap;
+    }
     .featureItem{
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include mobile{
+        width: 48%;
+      }
       img{
         width: 100px;
         height: 100px;
@@ -102,6 +112,9 @@
       @include pad{
         width: 34%;
       }
+      @include mobile{
+        width: 49%;
+      }
       img{
         padding-bottom: calc(2 * #{$m4-p4});
       }
@@ -127,12 +140,19 @@
   }
   .coBrandList{
     display: flex;
+    @include mobile{
+      flex-wrap: wrap;
+      gap: $gap;
+    }
     .coBrandItem{
       font-size: $em-fz;
       font-weight: $black;
       font-family: $english;
       font-style: italic;
       color: #AA0601;
+      @include mobile{
+        width: 100%;
+      }
       em{
         display: block;
         padding: calc(2 * #{$m4-p4}) 0;
@@ -165,6 +185,9 @@
     .reviewItem{
       @include pad{
         width: 33%;
+      }
+      @include mobile{
+        width: 46%;
       }
       border-radius: 4px;
       .cardContent{

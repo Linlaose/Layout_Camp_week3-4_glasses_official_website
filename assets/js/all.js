@@ -8,9 +8,11 @@ var sunglassesTitle = document.querySelector('.sunglasses');
 var functionalTitle = document.querySelector('.functional'); // 經過 querySelectorAll 選取的變數會被儲存為陣列，使用時注意，不可視為單一元素
 
 var opticalImage = document.querySelectorAll('.opticalImageHeader');
+var opticalImageSm = document.querySelectorAll('.opticalImageHeaderSm');
 var celluloid = document.querySelector('.titleCelluloid');
 var opticalList = document.querySelector('.opticalProductList');
-var sunglassesList = document.querySelector('.sunglassesList');
+var sunglassesList = document.querySelector('.sunglassesList'); // stores block
+
 var labelText = document.querySelector('.district > span');
 var ulList = document.querySelector('.storeList');
 var selectList = document.querySelector('#card');
@@ -27,7 +29,10 @@ if (seriesItem) {
       sunglassesTitle.setAttribute('class', 'borderTransparent');
       functionalTitle.setAttribute('class', 'borderTransparent');
       opticalImage.forEach(function (i) {
-        i.removeAttribute('class');
+        i.classList.remove('imgHide');
+      });
+      opticalImageSm.forEach(function (i) {
+        i.setAttribute('class', 'opticalImageHeaderSm');
       });
       celluloid.textContent = 'Celluloid Combi';
       opticalList.setAttribute('class', 'opticalProductList');
@@ -37,6 +42,9 @@ if (seriesItem) {
       opticalTitle.setAttribute('class', 'borderTransparent');
       functionalTitle.setAttribute('class', 'borderTransparent');
       opticalImage.forEach(function (i) {
+        i.classList.add('imgHide');
+      });
+      opticalImageSm.forEach(function (i) {
         i.setAttribute('class', 'imgHide');
       });
       celluloid.textContent = '2020 NEW COLLECTION';

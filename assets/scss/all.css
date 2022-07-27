@@ -19,6 +19,10 @@
   .submitButton:hover {
     cursor: pointer;
     opacity: .8; }
+  @media (max-width: 767px) {
+    .submitButton {
+      width: 100%;
+      padding: calc(4 * 4px) 0; } }
 
 .previousButton {
   padding: calc(2.75 * 4px) calc(3 * 4px);
@@ -197,6 +201,12 @@ body {
   max-width: 1320px;
   padding: 0 calc(3 * 4px);
   margin: 0 auto; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 720px; } }
 
 img {
   display: block;
@@ -233,7 +243,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 24px; }
+    gap: 64px; }
     header .navItem a {
       color: #FFFFFF;
       border-bottom: 1px solid transparent; }
@@ -258,6 +268,9 @@ header {
   @media (max-width: 992px) {
     .contactBox {
       width: auto; } }
+  @media (max-width: 767px) {
+    .contactBox {
+      width: 80%; } }
 
 .contactForm {
   display: -webkit-box;
@@ -308,6 +321,9 @@ header {
       background-color: #FBF2F2; }
     .contactForm section .submit {
       padding-top: calc(12 * 4px); }
+      @media (max-width: 767px) {
+        .contactForm section .submit {
+          width: 58%; } }
   .contactForm .secSubmit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -376,6 +392,9 @@ footer {
         border-bottom: 1px solid #fff; }
   footer .mediaGap {
     gap: 32px; }
+    @media (max-width: 767px) {
+      footer .mediaGap {
+        gap: calc(4 * 4px); } }
     footer .mediaGap a:hover {
       opacity: .8;
       border: none; }
@@ -433,6 +452,12 @@ footer {
   font-family: "Noto Sans TC", sans-serif;
   background-image: url(../images/home-header.png);
   background-size: cover; }
+  @media (max-width: 767px) {
+    .banner {
+      background-image: url(../images/home-header-sm.png);
+      -webkit-transition: background-image .5s;
+      -o-transition: background-image .5s;
+      transition: background-image .5s; } }
   .banner .bannerText {
     height: 100%;
     display: -webkit-box;
@@ -483,6 +508,10 @@ footer {
     display: -ms-flexbox;
     display: flex;
     gap: 24px; }
+    @media (max-width: 767px) {
+      .features .featureList {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .features .featureList .featureItem {
       width: 100%;
       display: -webkit-box;
@@ -495,6 +524,9 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      @media (max-width: 767px) {
+        .features .featureList .featureItem {
+          width: 48%; } }
       .features .featureList .featureItem img {
         width: 100px;
         height: 100px; }
@@ -555,6 +587,9 @@ footer {
       @media (max-width: 992px) {
         .classicFrame .frameIntroList .frameIntroItem {
           width: 34%; } }
+      @media (max-width: 767px) {
+        .classicFrame .frameIntroList .frameIntroItem {
+          width: 49%; } }
       .classicFrame .frameIntroList .frameIntroItem img {
         padding-bottom: calc(2 * 4px); }
 
@@ -584,12 +619,20 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 767px) {
+      .coBrandFrame .coBrandList {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 24px; } }
     .coBrandFrame .coBrandList .coBrandItem {
       font-size: 48px;
       font-weight: 900;
       font-family: "Roboto", sans-serif;
       font-style: italic;
       color: #AA0601; }
+      @media (max-width: 767px) {
+        .coBrandFrame .coBrandList .coBrandItem {
+          width: 100%; } }
       .coBrandFrame .coBrandList .coBrandItem em {
         display: block;
         padding: calc(2 * 4px) 0;
@@ -631,6 +674,9 @@ footer {
       @media (max-width: 992px) {
         .recommended .reviewList .reviewItem {
           width: 33%; } }
+      @media (max-width: 767px) {
+        .recommended .reviewList .reviewItem {
+          width: 46%; } }
       .recommended .reviewList .reviewItem .cardContent {
         padding: calc(4 * 4px);
         font-family: "Noto Sans TC", sans-serif;
@@ -672,6 +718,14 @@ footer {
   display: -ms-flexbox;
   display: flex; }
 
+.series .seriesList {
+  max-width: 1320px;
+  padding: 0 calc(3 * 4px);
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .series .seriesList {
+      padding: 0; } }
+
 .series .seriesItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -685,6 +739,9 @@ footer {
   font-size: 32px;
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
+  @media (max-width: 767px) {
+    .series .seriesItem {
+      font-size: 24px; } }
   .series .seriesItem h3 {
     width: 33.333%;
     text-align: center; }
@@ -695,6 +752,9 @@ footer {
   .series .seriesItem a {
     padding: calc(6 * 4px) 0;
     color: #000000; }
+    @media (max-width: 767px) {
+      .series .seriesItem a {
+        padding: calc(4 * 4px) 0; } }
 
 .brandImage {
   display: -webkit-box;
@@ -732,6 +792,10 @@ footer {
     .productBox .opticalProductList .opticalProductItem {
       max-width: 23.6%;
       padding-bottom: calc(14 * 4px); }
+      @media (max-width: 767px) {
+        .productBox .opticalProductList .opticalProductItem {
+          max-width: 46%;
+          padding-bottom: 16px; } }
       .productBox .opticalProductList .opticalProductItem p {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -777,6 +841,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media (max-width: 767px) {
+      .productBox .pageController {
+        padding-top: 64px; } }
     .productBox .pageController .pageList {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -806,6 +873,10 @@ footer {
     .productBox .sunglassesProductList .sunglassesProductItem {
       max-width: 32.099%;
       padding-bottom: calc(14 * 4px); }
+      @media (max-width: 767px) {
+        .productBox .sunglassesProductList .sunglassesProductItem {
+          max-width: 46%;
+          padding-bottom: calc(4 * 4px); } }
       .productBox .sunglassesProductList .sunglassesProductItem p {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -845,6 +916,26 @@ footer {
         background-color: #AA0601;
         border-radius: 4px; }
 
+@media (max-width: 767px) {
+  .opticalImageHeader {
+    display: none; } }
+
+.opticalImageHeaderSm {
+  display: none; }
+  @media (max-width: 767px) {
+    .opticalImageHeaderSm {
+      display: block; } }
+
+@media (max-width: 767px) {
+  .sunglassesImageHeader {
+    display: none; } }
+
+.sunglassesImageHeaderSm {
+  display: none; }
+  @media (max-width: 767px) {
+    .sunglassesImageHeaderSm {
+      display: block; } }
+
 .storeBox {
   margin: 0 auto;
   padding: calc(24 * 4px) calc(3 * 4px) calc(8 * 4px); }
@@ -866,6 +957,10 @@ footer {
     .storeBox .storeList .storeItem {
       width: 32.1%;
       padding-bottom: calc(12 * 4px); }
+      @media (max-width: 767px) {
+        .storeBox .storeList .storeItem {
+          width: 48%;
+          padding-bottom: calc(6 * 4px); } }
     .storeBox .storeList .storeName {
       padding: calc(2 * 4px) 0 calc(2 * 4px) calc(6 * 4px);
       font-size: 24px;
@@ -909,14 +1004,41 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: calc(12 * 4px); }
+    @media (max-width: 767px) {
+      .storeBox .singleList {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .storeBox .singleList .singleItem {
       width: 40.5%;
       padding: 0; }
+      @media (max-width: 767px) {
+        .storeBox .singleList .singleItem {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+      @media (max-width: 767px) {
+        .storeBox .singleList .singleItem .singleStore {
+          width: 48%; } }
+      @media (max-width: 767px) {
+        .storeBox .singleList .singleItem img {
+          max-width: 48%;
+          -o-object-fit: cover;
+             object-fit: cover; } }
     .storeBox .singleList .googleMap {
       width: 57.5%;
       max-height: 414px;
       -o-object-fit: cover;
          object-fit: cover; }
+      @media (max-width: 767px) {
+        .storeBox .singleList .googleMap {
+          width: 100%;
+          padding-top: calc(6 * 4px); } }
 
 main .container .listHide {
   display: none; }
@@ -925,9 +1047,18 @@ main .container .listHide {
   max-width: 1320px;
   padding: 0 calc(3 * 4px);
   margin: 0 auto; }
+  @media (max-width: 992px) {
+    .faqFlex {
+      max-width: 960px; } }
+  @media (max-width: 767px) {
+    .faqFlex {
+      max-width: 720px; } }
 
 .faqBox {
   padding: calc(24 * 4px) 0 calc(8 * 4px); }
+  @media (max-width: 767px) {
+    .faqBox {
+      padding: calc(20 * 4px) 0 calc(8 * 4px); } }
   .faqBox h2 {
     padding-left: calc(4 * 4px);
     font-size: 48px;
@@ -988,6 +1119,9 @@ main .container .listHide {
 .blogBox {
   margin: 0 auto;
   padding: calc(24 * 4px) calc(3 * 4px) calc(20 * 4px); }
+  @media (max-width: 767px) {
+    .blogBox {
+      padding: calc(20 * 4px) calc(3 * 4px) calc(20 * 4px); } }
   .blogBox h2 {
     padding-left: calc(4 * 4px);
     font-size: 48px;
@@ -996,6 +1130,9 @@ main .container .listHide {
     border-left: 8px solid #9F1213; }
   .blogBox .blogList {
     padding: calc(8 * 4px) 0 calc(16 * 4px); }
+    @media (max-width: 767px) {
+      .blogBox .blogList {
+        padding: calc(10 * 4px) 0 calc(5 * 4px); } }
     .blogBox .blogList .blogItem {
       padding-bottom: calc(15 * 4px);
       display: -webkit-box;
@@ -1015,6 +1152,9 @@ main .container .listHide {
         font-size: 32px;
         font-family: "Noto Sans TC", sans-serif;
         color: #650300; }
+        @media (max-width: 767px) {
+          .blogBox .blogList .blogContent h3 {
+            font-size: 24px; } }
       .blogBox .blogList .blogContent .englishTitle {
         padding-bottom: calc(4 * 4px);
         display: -webkit-box;
@@ -1029,6 +1169,9 @@ main .container .listHide {
         font-size: 20px;
         font-weight: 500;
         font-family: "Roboto", sans-serif; }
+        @media (max-width: 767px) {
+          .blogBox .blogList .blogContent .englishTitle {
+            font-size: 16px; } }
       .blogBox .blogList .blogContent .postDate {
         font-size: 16px;
         font-weight: 500;
@@ -1038,6 +1181,14 @@ main .container .listHide {
         font-size: 20px;
         font-family: "Noto Sans TC", sans-serif;
         color: #555555; }
+        @media (max-width: 767px) {
+          .blogBox .blogList .blogContent .abstract {
+            display: none; } }
+      .blogBox .blogList .blogContent .abstractSm {
+        display: none; }
+        @media (max-width: 767px) {
+          .blogBox .blogList .blogContent .abstractSm {
+            display: block; } }
       .blogBox .blogList .blogContent .more {
         position: absolute;
         right: 0;
@@ -1049,8 +1200,14 @@ main .container .listHide {
         @media (max-width: 992px) {
           .blogBox .blogList .blogContent .more {
             bottom: -10px; } }
+        @media (max-width: 767px) {
+          .blogBox .blogList .blogContent .more {
+            display: none; } }
         .blogBox .blogList .blogContent .more:hover {
           color: #ff0000; }
+      @media (max-width: 767px) {
+        .blogBox .blogList .blogContent .moreSm {
+          display: inline; } }
   .blogBox .pageController {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1078,6 +1235,9 @@ main .container .listHide {
   .specialPlanningBox .pageName {
     padding-top: calc(6 * 4px);
     font-family: "Noto Sans TC", sans-serif; }
+    @media (max-width: 767px) {
+      .specialPlanningBox .pageName {
+        padding-top: calc(2 * 4px); } }
   .specialPlanningBox span:hover {
     cursor: pointer;
     border-bottom: 1px solid #555; }
@@ -1104,6 +1264,9 @@ main .container .listHide {
     margin-bottom: 80px; }
   .specialPlanningBox .content {
     width: 66.1%; }
+    @media (max-width: 767px) {
+      .specialPlanningBox .content {
+        width: 74%; } }
     .specialPlanningBox .content h2 {
       padding-top: calc(2 * 4px);
       font-size: 48px;
@@ -1113,11 +1276,20 @@ main .container .listHide {
       font-size: 24px;
       font-weight: 700;
       font-family: "Roboto", sans-serif; }
+      @media (max-width: 767px) {
+        .specialPlanningBox .content h4 {
+          padding-bottom: calc(6 * 4px); } }
     .specialPlanningBox .content p {
       padding-bottom: calc(10 * 4px);
       font-family: "Noto Sans TC", sans-serif; }
+      @media (max-width: 767px) {
+        .specialPlanningBox .content p {
+          padding-bottom: calc(6 * 4px); } }
       .specialPlanningBox .content p img {
         padding-bottom: calc(2 * 4px); }
+        @media (max-width: 767px) {
+          .specialPlanningBox .content p img {
+            padding-bottom: calc(4 * 4px); } }
       .specialPlanningBox .content p span {
         color: #555555; }
         .specialPlanningBox .content p span:hover {
@@ -1134,6 +1306,9 @@ main .container .listHide {
               justify-content: space-between;
       font-weight: 700;
       font-family: "Roboto", sans-serif; }
+      @media (max-width: 767px) {
+        .specialPlanningBox .content .shareList {
+          padding-top: calc(4 * 4px); } }
       .specialPlanningBox .content .shareList span:hover {
         cursor: auto;
         border-bottom: none; }
@@ -1185,6 +1360,9 @@ main .container .listHide {
     padding-left: calc(6 * 4px);
     font-weight: 700;
     color: #AA0601; }
+    @media (max-width: 767px) {
+      .specialPlanningBox .tags {
+        width: 20%; } }
     .specialPlanningBox .tags h3 {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1194,19 +1372,37 @@ main .container .listHide {
               align-items: center;
       gap: calc(24px / 2);
       font-size: 32px; }
+      @media (max-width: 767px) {
+        .specialPlanningBox .tags h3 {
+          font-size: 16px; } }
       .specialPlanningBox .tags h3 img {
         width: 48px;
         height: 48px; }
+        @media (max-width: 767px) {
+          .specialPlanningBox .tags h3 img {
+            width: 24px;
+            height: 24px; } }
     .specialPlanningBox .tags .tagsList {
       font-size: 24px;
       font-weight: 700;
       font-family: "Roboto", sans-serif; }
+      @media (max-width: 767px) {
+        .specialPlanningBox .tags .tagsList {
+          font-size: 16px; } }
       .specialPlanningBox .tags .tagsList .tagsItem {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         gap: 24px;
         padding-bottom: 4px; }
+        @media (max-width: 767px) {
+          .specialPlanningBox .tags .tagsList .tagsItem {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            gap: 0; } }
       .specialPlanningBox .tags .tagsList h4:hover {
         cursor: pointer;
         text-decoration: underline;

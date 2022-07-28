@@ -1,6 +1,9 @@
 "use strict";
 
-console.log('hello'); // series block
+console.log('hello'); // header block
+
+var hamburger = document.querySelector('.menu');
+var menu = document.querySelector('.navList'); // series block
 
 var seriesItem = document.querySelector('.seriesItem');
 var opticalTitle = document.querySelector('.optical');
@@ -17,7 +20,15 @@ var labelText = document.querySelector('.district > span');
 var ulList = document.querySelector('.storeList');
 var selectList = document.querySelector('#card');
 var storeList = document.querySelector('.storeList');
-var singleList = document.querySelector('.singleList'); // 觸發產品頁籤
+var singleList = document.querySelector('.singleList'); // 觸發漢堡選單
+
+if (hamburger) {
+  hamburger.addEventListener('click', function (e) {
+    e.preventDefault();
+    menu.classList.toggle('menuOpen');
+  });
+} // 觸發產品頁籤
+
 
 if (seriesItem) {
   //先加上 if 判斷，是為了避免頁面切換之後找不到原有的元素而跳錯誤

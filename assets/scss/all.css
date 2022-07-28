@@ -207,6 +207,9 @@ body {
   @media (max-width: 767px) {
     .container {
       max-width: 720px; } }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 100%; } }
 
 img {
   display: block;
@@ -243,12 +246,44 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 64px; }
+    gap: 64px;
+    overflow: hidden; }
+    @media (max-width: 576px) {
+      header .navItem {
+        gap: 0;
+        max-height: 0; } }
     header .navItem a {
       color: #FFFFFF;
       border-bottom: 1px solid transparent; }
       header .navItem a:hover {
         border-bottom: 1px solid #fff; }
+  header .menu {
+    display: none; }
+    @media (max-width: 576px) {
+      header .menu {
+        display: block; }
+        header .menu:hover {
+          cursor: pointer; } }
+  header .menuOpen {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    max-height: 500px; }
+    header .menuOpen .navItem {
+      display: block;
+      max-height: 500px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transition: max-height .8s;
+      -o-transition: max-height .8s;
+      transition: max-height .8s; }
+      header .menuOpen .navItem a {
+        padding: calc(6 * 4px) 0; }
+        header .menuOpen .navItem a:hover {
+          cursor: pointer;
+          background-color: black;
+          border: none; }
 
 .contactUs {
   display: -webkit-box;
@@ -262,6 +297,9 @@ header {
   @media (max-width: 992px) {
     .contactUs {
       padding: 80px calc(3 * 4px); } }
+  @media (max-width: 576px) {
+    .contactUs {
+      padding: calc(10 * 4px) calc(3 * 4px); } }
 
 .contactBox {
   width: 33.43%; }
@@ -271,6 +309,9 @@ header {
   @media (max-width: 767px) {
     .contactBox {
       width: 80%; } }
+  @media (max-width: 576px) {
+    .contactBox {
+      width: 100%; } }
 
 .contactForm {
   display: -webkit-box;
@@ -288,11 +329,17 @@ header {
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     color: #650300; }
+    @media (max-width: 576px) {
+      .contactForm h2 {
+        font-size: 24px; } }
   .contactForm h5 {
     padding: calc(12 * 4px) 0 calc(2 * 4px);
     font-size: 20px;
     font-weight: 400;
     font-family: "Noto Sans TC", sans-serif; }
+    @media (max-width: 576px) {
+      .contactForm h5 {
+        padding: calc(6 * 4px) 0 calc(2 * 4px); } }
   .contactForm section {
     width: 100%; }
     .contactForm section p {
@@ -319,11 +366,28 @@ header {
       padding-top: calc(1.5 * 4px);
       padding-left: calc(3 * 4px);
       background-color: #FBF2F2; }
+    @media (max-width: 576px) {
+      .contactForm section .check {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .contactForm section .submit {
       padding-top: calc(12 * 4px); }
       @media (max-width: 767px) {
         .contactForm section .submit {
           width: 58%; } }
+      @media (max-width: 576px) {
+        .contactForm section .submit {
+          width: 100%; } }
+    @media (max-width: 576px) {
+      .contactForm section input[type="checkbox"] {
+        margin: 6px 0 0 0; } }
+    @media (max-width: 576px) {
+      .contactForm section label[for="agreeTerms"] {
+        margin-left: 4px; } }
   .contactForm .secSubmit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,6 +431,12 @@ header {
 footer {
   padding: 48px 0 32px;
   background-color: #AA0601; }
+  @media (max-width: 576px) {
+    footer {
+      padding: calc(6 * 4px) 0 calc(4 * 4px); } }
+  @media (max-width: 576px) {
+    footer .footerBox {
+      display: none; } }
   footer .footerNavList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -400,11 +470,33 @@ footer {
       border: none; }
   footer .socialMediaIcon {
     width: 48px; }
+    @media (max-width: 576px) {
+      footer .socialMediaIcon {
+        width: 24px; } }
   footer .footerContactList {
     margin-bottom: 32px;
     border-bottom: 1px solid #fff; }
+    @media (max-width: 576px) {
+      footer .footerContactList {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin-bottom: 15px; } }
   footer .footerContactItem {
     gap: 20px; }
+    @media (max-width: 576px) {
+      footer .footerContactItem {
+        width: 62%; } }
   footer .contactBox {
     gap: 20px;
     display: -webkit-box;
@@ -416,6 +508,10 @@ footer {
     font-size: 36px;
     font-weight: 400;
     font-family: "Noto Sans TC", sans-serif; }
+    @media (max-width: 576px) {
+      footer .contactBox {
+        font-size: 16px;
+        gap: 8px; } }
     footer .contactBox a {
       color: #fff;
       border-bottom: 1px solid transparent; }
@@ -424,8 +520,25 @@ footer {
   footer .phoneBox {
     padding-top: 27px;
     padding-bottom: calc(3.5 * 4px); }
+    @media (max-width: 576px) {
+      footer .phoneBox {
+        padding: 0 0 calc(2 * 4px); } }
+    @media (max-width: 576px) {
+      footer .phoneBox img {
+        width: 24px; } }
   footer .mailBox {
     padding-bottom: 32px; }
+    @media (max-width: 576px) {
+      footer .mailBox {
+        padding-bottom: calc(6 * 4px); } }
+    @media (max-width: 576px) {
+      footer .mailBox img {
+        width: 24px; } }
+  footer .iPhonefooterBox {
+    display: none; }
+    @media (max-width: 576px) {
+      footer .iPhonefooterBox {
+        display: block; } }
   footer .copyrightItem {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,18 +547,31 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #fff; }
+    @media (max-width: 576px) {
+      footer .copyrightItem {
+        display: block; } }
     footer .copyrightItem p {
       font-size: 16px;
       font-weight: 400;
       font-family: "Roboto", sans-serif; }
+      @media (max-width: 576px) {
+        footer .copyrightItem p {
+          padding-bottom: calc(2 * 4px); } }
     footer .copyrightItem .termsBox {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       gap: calc(2 * 24px); }
+      @media (max-width: 576px) {
+        footer .copyrightItem .termsBox {
+          display: block; } }
       footer .copyrightItem .termsBox span {
         display: block;
         font-size: 14px; }
+        @media (max-width: 576px) {
+          footer .copyrightItem .termsBox span {
+            font-size: 16px;
+            padding-bottom: calc(2 * 4px); } }
 
 .banner {
   height: 787px;
@@ -458,6 +584,10 @@ footer {
       -webkit-transition: background-image .5s;
       -o-transition: background-image .5s;
       transition: background-image .5s; } }
+  @media (max-width: 576px) {
+    .banner {
+      height: 396px;
+      background-position: center center; } }
   .banner .bannerText {
     height: 100%;
     display: -webkit-box;
@@ -478,10 +608,16 @@ footer {
       font-size: 64px;
       font-weight: 700;
       padding-bottom: 4px; }
+      @media (max-width: 576px) {
+        .banner .bannerText h1 {
+          font-size: 24px; } }
     .banner .bannerText h3 {
       font-size: 36px;
       font-weight: 400;
       font-family: "Noto Sans TC", sans-serif; }
+      @media (max-width: 576px) {
+        .banner .bannerText h3 {
+          font-size: 16px; } }
     .banner .bannerText h5 {
       font-size: 20px;
       font-weight: 500;
@@ -503,6 +639,9 @@ footer {
     color: #650300;
     text-align: center;
     font-family: "Noto Sans TC", sans-serif; }
+    @media (max-width: 576px) {
+      .features h2 {
+        font-size: 24px; } }
   .features .featureList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,6 +651,11 @@ footer {
       .features .featureList {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
+    @media (max-width: 576px) {
+      .features .featureList {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .features .featureList .featureItem {
       width: 100%;
       display: -webkit-box;
@@ -527,6 +671,9 @@ footer {
       @media (max-width: 767px) {
         .features .featureList .featureItem {
           width: 48%; } }
+      @media (max-width: 576px) {
+        .features .featureList .featureItem {
+          width: 100%; } }
       .features .featureList .featureItem img {
         width: 100px;
         height: 100px; }
@@ -562,6 +709,9 @@ footer {
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     color: #650300; }
+    @media (max-width: 576px) {
+      .classicFrame h2 {
+        font-size: 24px; } }
   .classicFrame .frameIntroList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -590,6 +740,9 @@ footer {
       @media (max-width: 767px) {
         .classicFrame .frameIntroList .frameIntroItem {
           width: 49%; } }
+      @media (max-width: 576px) {
+        .classicFrame .frameIntroList .frameIntroItem {
+          width: 100%; } }
       .classicFrame .frameIntroList .frameIntroItem img {
         padding-bottom: calc(2 * 4px); }
 
@@ -633,6 +786,14 @@ footer {
       @media (max-width: 767px) {
         .coBrandFrame .coBrandList .coBrandItem {
           width: 100%; } }
+      @media (max-width: 576px) {
+        .coBrandFrame .coBrandList .coBrandItem .coBrandFrameOriginal {
+          display: none; } }
+      .coBrandFrame .coBrandList .coBrandItem .coBrandFrameSm {
+        display: none; }
+        @media (max-width: 576px) {
+          .coBrandFrame .coBrandList .coBrandItem .coBrandFrameSm {
+            display: block; } }
       .coBrandFrame .coBrandList .coBrandItem em {
         display: block;
         padding: calc(2 * 4px) 0;
@@ -657,6 +818,9 @@ footer {
     font-family: "Noto Sans TC", sans-serif;
     text-align: center;
     color: #650300; }
+    @media (max-width: 576px) {
+      .recommended h2 {
+        font-size: 24px; } }
   .recommended .reviewList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -677,6 +841,9 @@ footer {
       @media (max-width: 767px) {
         .recommended .reviewList .reviewItem {
           width: 46%; } }
+      @media (max-width: 576px) {
+        .recommended .reviewList .reviewItem {
+          width: 100%; } }
       .recommended .reviewList .reviewItem .cardContent {
         padding: calc(4 * 4px);
         font-family: "Noto Sans TC", sans-serif;
@@ -951,16 +1118,13 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    gap: 24px; }
     .storeBox .storeList .storeItem {
       width: 32.1%;
-      padding-bottom: calc(12 * 4px); }
-      @media (max-width: 767px) {
+      padding-bottom: calc(6 * 4px); }
+      @media (max-width: 992px) {
         .storeBox .storeList .storeItem {
-          width: 48%;
-          padding-bottom: calc(6 * 4px); } }
+          width: 48%; } }
     .storeBox .storeList .storeName {
       padding: calc(2 * 4px) 0 calc(2 * 4px) calc(6 * 4px);
       font-size: 24px;

@@ -8,4 +8,10 @@
   @media (max-width: 767px){
     @content
   }
+};
+
+@mixin iPhone{
+  @media (max-width: 576px) {
+    @content
+  }
 }

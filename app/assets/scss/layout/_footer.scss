@@ -1,6 +1,14 @@
 footer{
   padding: 48px 0 32px;
   background-color: #AA0601;
+  @include iPhone{
+    padding: calc(6 * #{$m4-p4}) 0 calc(4 * #{$m4-p4});
+  }
+  .footerBox {
+    @include iPhone{
+      display: none;
+    }
+  }
   .footerNavList{
     display: flex;
     justify-content: space-between;
@@ -34,13 +42,26 @@ footer{
   }
   .socialMediaIcon{
     width: 48px;
+    @include iPhone{
+      width: 24px;
+    }
   }
   .footerContactList{
     margin-bottom: 32px;
     border-bottom: 1px solid #fff;
+    @include iPhone{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
   }
   .footerContactItem{
     gap: 20px;
+    @include iPhone{
+      width: 62%;
+    }
   }
   .contactBox{
     gap: 20px;
@@ -49,6 +70,10 @@ footer{
     font-size: $h3-fz;
     font-weight: $regular;
     font-family: $chinese;
+    @include iPhone{
+      font-size: $p-fz;
+      gap: 8px;
+    }
     a{
       color: #fff;
       border-bottom: 1px solid transparent;
@@ -60,25 +85,60 @@ footer{
   .phoneBox{
     padding-top: 27px;
     padding-bottom: calc(3.5 * #{$m4-p4});
+    @include iPhone{
+      padding: 0 0 calc(2 * #{$m4-p4});
+    }
+    img{
+      @include iPhone{
+        width: 24px;
+      }
+    }
   }
   .mailBox{
     padding-bottom: 32px;
+    @include iPhone{
+      padding-bottom: calc(6 * #{$m4-p4});
+    }
+    img{
+      @include iPhone{
+        width: 24px;
+      }
+    }
+  }
+  .iPhonefooterBox{
+    display: none;
+    @include iPhone{
+      display: block;
+    }
   }
   .copyrightItem{
     display: flex;
     justify-content: space-between;
     color: #fff;
+    @include iPhone{
+      display: block;
+    }
     p{
       font-size: $p-fz;
       font-weight: $regular;
       font-family: $english;
+      @include iPhone{
+        padding-bottom: calc(2 * #{$m4-p4});
+      }
     }
     .termsBox{
       display: flex;
       gap: calc(2 * #{$gap});
+      @include iPhone{
+        display: block;
+      }
       span{
         display: block;
         font-size: $span-fz;
+        @include iPhone{
+          font-size: $p-fz;
+          padding-bottom: calc(2 * #{$m4-p4});
+        }
       }
     }
   }

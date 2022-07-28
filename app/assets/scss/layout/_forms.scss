@@ -6,6 +6,9 @@
   @include pad{
     padding: $pt-pb-80 calc(3 * #{$m4-p4});
   }
+  @include iPhone{
+    padding: calc(10 * #{$m4-p4}) calc(3 * #{$m4-p4});
+  }
 }
 
 .contactBox{
@@ -15,6 +18,9 @@
   }
   @include mobile{
     width: 80%;
+  }
+  @include iPhone{
+    width: 100%;
   }
 }
 
@@ -27,12 +33,18 @@
     font-weight: $bold;
     font-family: $chinese;
     color: #650300;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   h5{
     padding: calc(12 * #{$m4-p4}) 0 calc(2 * #{$m4-p4});
     font-size: $h5-fz;
     font-weight: $regular;
     font-family: $chinese;
+    @include iPhone{
+      padding: calc(6 * #{$m4-p4}) 0 calc(2 * #{$m4-p4});
+    }
   }
   section{
     width: 100%;
@@ -64,10 +76,29 @@
       padding-left: calc(3 * #{$m4-p4});
       background-color: #FBF2F2;
     }
+    .check{
+      @include iPhone{
+        display: flex;
+        align-items: flex-start;
+      }
+    }
     .submit{
       padding-top: calc(12 * #{$m4-p4});
       @include mobile{
         width: 58%;
+      }
+      @include iPhone{
+        width: 100%;
+      }
+    }
+    input[type="checkbox"]{
+      @include iPhone{
+        margin: 6px 0 0 0;
+      }
+    }
+    label[for="agreeTerms"]{
+      @include iPhone{
+        margin-left: 4px;
       }
     }
   }

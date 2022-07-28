@@ -1,5 +1,9 @@
 console.log('hello');
 
+// header block
+const hamburger = document.querySelector('.menu');
+const menu = document.querySelector('.navList');
+
 // series block
 const seriesItem = document.querySelector('.seriesItem');
 const opticalTitle = document.querySelector('.optical');
@@ -19,6 +23,13 @@ const selectList = document.querySelector('#card');
 const storeList = document.querySelector('.storeList');
 const singleList = document.querySelector('.singleList');
 
+// 觸發漢堡選單
+if (hamburger) {
+  hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    menu.classList.toggle('menuOpen');
+  })
+}
 
 // 觸發產品頁籤
 if (seriesItem) { //先加上 if 判斷，是為了避免頁面切換之後找不到原有的元素而跳錯誤

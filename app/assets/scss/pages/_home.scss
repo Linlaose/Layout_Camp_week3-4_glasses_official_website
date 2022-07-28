@@ -7,6 +7,10 @@
     background-image: url(../images/home-header-sm.png);
     transition: background-image .5s;
   }
+  @include iPhone{
+    height: 396px;
+    background-position: center center;
+  }
   .bannerText{
     height: 100%;
     display: flex;
@@ -18,11 +22,17 @@
       font-size: $h1-fz;
       font-weight: $bold;
       padding-bottom: $m4-p4;
+      @include iPhone{
+        font-size: $h4-fz;
+      }
     }
     h3{
       font-size: $h3-fz;
       font-weight: $regular;
       font-family: $chinese;
+      @include iPhone{
+        font-size: $p-fz;
+      }
     }
     h5{
       font-size: $h5-fz;
@@ -44,12 +54,18 @@
     color: #650300;
     text-align: center;
     font-family: $chinese;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   .featureList{
     display: flex;
     gap: $gap;
     @include mobile {
       flex-wrap: wrap;
+    }
+    @include iPhone{
+      justify-content: center;
     }
     .featureItem{
       width: 100%;
@@ -58,6 +74,9 @@
       align-items: center;
       @include mobile{
         width: 48%;
+      }
+      @include iPhone{
+        width: 100%;
       }
       img{
         width: 100px;
@@ -93,6 +112,9 @@
     font-weight: $bold;
     font-family: $chinese;
     color: #650300;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   .frameIntroList{
     display: flex;
@@ -114,6 +136,9 @@
       }
       @include mobile{
         width: 49%;
+      }
+      @include iPhone{
+        width: 100%;
       }
       img{
         padding-bottom: calc(2 * #{$m4-p4});
@@ -153,6 +178,17 @@
       @include mobile{
         width: 100%;
       }
+      .coBrandFrameOriginal{
+        @include iPhone{
+          display: none;
+        }
+      }
+      .coBrandFrameSm{
+        display: none;
+        @include iPhone{
+          display: block;
+        }
+      }
       em{
         display: block;
         padding: calc(2 * #{$m4-p4}) 0;
@@ -174,6 +210,9 @@
     font-family: $chinese;
     text-align: center;
     color: #650300;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   .reviewList{
     display: flex;
@@ -188,6 +227,9 @@
       }
       @include mobile{
         width: 46%;
+      }
+      @include iPhone{
+        width: 100%;
       }
       border-radius: 4px;
       .cardContent{

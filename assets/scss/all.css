@@ -272,7 +272,7 @@ header {
           cursor: pointer; } }
   header .menuOpen {
     position: absolute;
-    top: 80px;
+    top: 79px;
     left: 0;
     width: 100%;
     max-height: 500px; }

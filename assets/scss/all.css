@@ -44,7 +44,8 @@
   font-family: "Roboto", sans-serif;
   color: #555555;
   background-color: #FFFFFF;
-  border: 1px solid #555555; }
+  border: 1px solid #555555;
+  border-left: 1px solid transparent; }
   @media (max-width: 576px) {
     .nextButton {
       font-size: 16px; } }
@@ -272,8 +273,9 @@ header {
           cursor: pointer; } }
   header .menuOpen {
     position: absolute;
-    top: 79px;
+    top: 80px;
     left: 0;
+    z-index: 10;
     width: 100%;
     max-height: 500px; }
     header .menuOpen .navItem {
@@ -406,6 +408,14 @@ header {
   margin: calc(8.25 * 4px) 0 calc(10.25 * 4px); }
   .storeForm p {
     position: relative; }
+    @media (max-width: 576px) {
+      .storeForm p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .storeForm p::after {
       content: '';
       position: absolute;
@@ -417,6 +427,12 @@ header {
       border-right-color: transparent;
       border-bottom-color: transparent;
       border-left-color: transparent; }
+      @media (max-width: 576px) {
+        .storeForm p::after {
+          left: 312px; } }
+    @media (max-width: 576px) {
+      .storeForm p .district {
+        font-size: 16px; } }
   .storeForm label {
     vertical-align: middle;
     display: inline-block;
@@ -433,6 +449,10 @@ header {
        -moz-appearance: none;
             appearance: none;
     border: 1px solid #CED4DA; }
+    @media (max-width: 576px) {
+      .storeForm select {
+        width: 276px;
+        margin-left: calc(2 * 4px); } }
 
 footer {
   padding: 48px 0 32px;
@@ -950,6 +970,9 @@ footer {
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     text-align: center; }
+    @media (max-width: 576px) {
+      .productBox h2 {
+        font-size: 24px; } }
   .productBox h3 {
     padding-bottom: calc(8 * 4px);
     font-size: 32px;
@@ -958,7 +981,8 @@ footer {
     text-align: center; }
     @media (max-width: 576px) {
       .productBox h3 {
-        padding-bottom: calc(6 * 4px); } }
+        padding-bottom: calc(6 * 4px);
+        font-size: 24px; } }
   .productBox .opticalProductList {
     gap: 24px;
     display: -webkit-box;
@@ -1039,11 +1063,13 @@ footer {
         font-size: 18px;
         font-family: "Roboto", sans-serif;
         color: #555555;
-        border: 1px solid #555555; }
+        border-top: 1px solid #555555;
+        border-right: 1px solid #555555;
+        border-bottom: 1px solid #555555; }
         @media (max-width: 576px) {
           .productBox .pageController .pageList .pageItem {
             font-size: 16px;
-            padding: calc(3 * 4px) calc(3.75 * 4px); } }
+            padding: calc(3 * 4px) calc(3 * 4px); } }
         .productBox .pageController .pageList .pageItem:hover {
           cursor: pointer;
           color: #fff;
@@ -1065,8 +1091,11 @@ footer {
       padding-bottom: calc(14 * 4px); }
       @media (max-width: 767px) {
         .productBox .sunglassesProductList .sunglassesProductItem {
-          max-width: 46%;
+          width: 46%;
           padding-bottom: calc(4 * 4px); } }
+      @media (max-width: 576px) {
+        .productBox .sunglassesProductList .sunglassesProductItem {
+          width: 100%; } }
       .productBox .sunglassesProductList .sunglassesProductItem p {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1135,6 +1164,9 @@ footer {
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     border-left: 8px solid #9F1213; }
+    @media (max-width: 576px) {
+      .storeBox h2 {
+        font-size: 24px; } }
   .storeBox .storeList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1148,6 +1180,9 @@ footer {
       @media (max-width: 992px) {
         .storeBox .storeList .storeItem {
           width: 48%; } }
+      @media (max-width: 576px) {
+        .storeBox .storeList .storeItem {
+          width: 100%; } }
     .storeBox .storeList .storeName {
       padding: calc(2 * 4px) 0 calc(2 * 4px) calc(6 * 4px);
       font-size: 24px;
@@ -1184,23 +1219,15 @@ footer {
     .storeBox .storeInfoList .storeInfoItem {
       padding: 4px 0; }
   .storeBox .singleList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-bottom: calc(12 * 4px); }
-    @media (max-width: 767px) {
+    @media (max-width: 576px) {
       .storeBox .singleList {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+        display: block;
+        margin-bottom: calc(8 * 4px); } }
     .storeBox .singleList .singleItem {
       width: 40.5%;
       padding: 0; }
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         .storeBox .singleList .singleItem {
           width: 100%;
           display: -webkit-box;
@@ -1209,20 +1236,29 @@ footer {
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; } }
-      @media (max-width: 767px) {
+      @media (max-width: 576px) {
+        .storeBox .singleList .singleItem {
+          display: block; } }
+      @media (max-width: 992px) {
         .storeBox .singleList .singleItem .singleStore {
           width: 48%; } }
-      @media (max-width: 767px) {
-        .storeBox .singleList .singleItem img {
-          max-width: 48%;
+      @media (max-width: 576px) {
+        .storeBox .singleList .singleItem .singleStore {
+          width: 100%; } }
+      @media (max-width: 992px) {
+        .storeBox .singleList .singleItem .storeImg {
+          width: 48%;
           -o-object-fit: cover;
              object-fit: cover; } }
+      @media (max-width: 576px) {
+        .storeBox .singleList .singleItem .storeImg {
+          width: 100%; } }
     .storeBox .singleList .googleMap {
       width: 57.5%;
       max-height: 414px;
       -o-object-fit: cover;
          object-fit: cover; }
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         .storeBox .singleList .googleMap {
           width: 100%;
           padding-top: calc(6 * 4px); } }
@@ -1252,6 +1288,9 @@ main .container .listHide {
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     border-left: 8px solid #9F1213; }
+    @media (max-width: 576px) {
+      .faqBox h2 {
+        font-size: 24px; } }
   .faqBox h4 {
     font-size: 24px;
     font-weight: 700;
@@ -1272,6 +1311,9 @@ main .container .listHide {
 
 .searchBar {
   background-color: #650300; }
+  @media (max-width: 576px) {
+    .searchBar {
+      display: none; } }
   .searchBar .searchBox {
     margin: 0 auto;
     display: -webkit-box;
@@ -1328,13 +1370,23 @@ main .container .listHide {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 576px) {
+        .blogBox .blogList .blogItem {
+          display: block; } }
     .blogBox .blogList .coverImage {
       width: 49.1%;
       -o-object-fit: cover;
          object-fit: cover; }
+      @media (max-width: 576px) {
+        .blogBox .blogList .coverImage {
+          width: 100%; } }
     .blogBox .blogList .blogContent {
       position: relative;
       width: 49.1%; }
+      @media (max-width: 576px) {
+        .blogBox .blogList .blogContent {
+          width: 100%;
+          padding-top: calc(2 * 4px); } }
       .blogBox .blogList .blogContent h3 {
         font-size: 32px;
         font-family: "Noto Sans TC", sans-serif;
@@ -1364,6 +1416,9 @@ main .container .listHide {
         font-weight: 500;
         font-family: "Roboto", sans-serif;
         color: rgba(0, 0, 0, 0.7); }
+        @media (max-width: 576px) {
+          .blogBox .blogList .blogContent .postDate {
+            color: #000000; } }
       .blogBox .blogList .blogContent .abstract {
         font-size: 20px;
         font-family: "Noto Sans TC", sans-serif;
@@ -1376,6 +1431,9 @@ main .container .listHide {
         @media (max-width: 767px) {
           .blogBox .blogList .blogContent .abstractSm {
             display: block; } }
+        @media (max-width: 576px) {
+          .blogBox .blogList .blogContent .abstractSm {
+            display: none; } }
       .blogBox .blogList .blogContent .more {
         position: absolute;
         right: 0;

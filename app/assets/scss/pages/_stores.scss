@@ -14,10 +14,10 @@
   .storeList{
     display: flex;
     flex-wrap: wrap;
-    gap: $gap;
+    margin-left: calc(-6 * #{$m4-p4});
     .storeItem{
-      width: 32.1%;
-      padding-bottom: calc(6 * #{$m4-p4});
+      width: 33.3%;
+      padding: 0 0 calc(6 * #{$m4-p4}) calc(6 * #{$m4-p4});
       @include pad{
         width: 48%
       };
@@ -64,13 +64,15 @@
     }
   }
   .singleList{
-    margin-bottom: calc(12 * #{$m4-p4});
+    justify-content: space-between;
+    margin: 0 0 calc(12 * #{$m4-p4}) 0;
+    gap: calc(6 * #{$m4-p4});
     @include iPhone{
       display: block;
       margin-bottom: calc(8 * #{$m4-p4});
     }
     .singleItem{
-      width: 40.5%;
+      width: 42.6%;
       padding: 0;
       @include pad{
         width: 100%;
@@ -99,8 +101,7 @@
       }
     }
     .googleMap{
-      width: 57.5%;
-      max-height: 414px;
+      width: 55.5%;
       object-fit: cover;
       @include pad{
         width: 100%;

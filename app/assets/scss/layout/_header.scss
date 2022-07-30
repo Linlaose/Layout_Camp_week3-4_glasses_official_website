@@ -10,10 +10,16 @@ header{
   .headerBox{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: calc(4 * #{$m4-p4}) calc(3 * #{$m4-p4});
+    @include iPhone{
+      padding: calc(3.75 * #{$m4-p4}) calc(3 * #{$m4-p4});
+    }
   }
   .headerLogo{
-    width: 80px;
+    min-width: 80px;
+    height: 48px;
+    object-fit: contain;
   }
   .navItem{
     display: flex;
@@ -42,7 +48,7 @@ header{
   }
   .menuOpen{
     position: absolute;
-    top: 80px;
+    top: 78px;
     left: 0;
     z-index: 10;
     width: 100%;
@@ -62,5 +68,8 @@ header{
         }
       }
     }
+  }
+  .hamburger{
+    min-width: 36px;
   }
 }

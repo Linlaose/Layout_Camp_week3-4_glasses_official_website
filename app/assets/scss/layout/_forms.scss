@@ -12,9 +12,9 @@
 }
 
 .contactBox{
-  width: 33.43%;
+  width: 40%;
   @include pad{
-    width: auto;
+    width: 66%;
   }
   @include mobile{
     width: 80%;

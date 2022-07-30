@@ -12,6 +12,7 @@ var functionalTitle = document.querySelector('.functional'); // 經過 querySele
 
 var opticalImage = document.querySelectorAll('.opticalImageHeader');
 var opticalImageSm = document.querySelectorAll('.opticalImageHeaderSm');
+var sunglassesImageSm = document.querySelectorAll('.sunglassesImageHeaderSm');
 var celluloid = document.querySelector('.titleCelluloid');
 var opticalList = document.querySelector('.opticalProductList');
 var sunglassesList = document.querySelector('.sunglassesList'); // stores block
@@ -65,6 +66,27 @@ if (seriesItem) {
       functionalTitle.setAttribute('class', 'borderShow');
       opticalTitle.setAttribute('class', 'borderTransparent');
       sunglassesTitle.setAttribute('class', 'borderTransparent');
+    }
+  });
+} // 配合斷點觸發產品頁籤
+
+
+if (seriesItem && window.innerWidth === 768) {
+  seriesItem.addEventListener('click', function (e) {
+    if (e.target.textContent === 'OPTICAL') {
+      opticalImageSm.forEach(function (i) {
+        i.setAttribute('class', 'opticalImageHeaderSm');
+      });
+      sunglassesImageSm.forEach(function (i) {
+        i.removeAttribute('style');
+      });
+    } else if (e.target.textContent === 'SUNGLASSES') {
+      opticalImageSm.forEach(function (i) {
+        i.setAttribute('class', 'imgHide');
+      });
+      sunglassesImageSm.forEach(function (i) {
+        i.style.display = 'block';
+      });
     }
   });
 } // 觸發門市據點的詳細資訊

@@ -43,6 +43,9 @@
     @include mobile {
       font-size: $h4-fz;
     }
+    @include iPhone{
+      font-size: $p-fz;
+    }
     h3{
       width: 33.333%;
       text-align: center;
@@ -72,6 +75,9 @@
 .productBox{
   padding: $pt-pb-80 0;
   margin: 0 auto;
+  @include iPhone{
+    padding: calc(10 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(16 * #{$m4-p4});
+  }
   h2{
     font-size: $series-h2-fz;
     font-weight: $medium;
@@ -84,6 +90,9 @@
     font-weight: $regular;
     font-family: $chinese;
     text-align: center;
+    @include iPhone{
+      padding-bottom: calc(6 * #{$m4-p4});
+    }
   }
   .opticalProductList{
     gap: $gap;
@@ -98,6 +107,10 @@
       @include mobile{
         max-width: 46%;
         padding-bottom: 16px;
+      }
+      @include iPhone{
+        max-width: 100%;
+        padding: 0;
       }
       p{
         display: flex;
@@ -158,6 +171,10 @@
         font-family: $english;
         color: #555555;
         border: 1px solid #555555;
+        @include iPhone{
+          font-size: $p-fz;
+          padding: calc(3 * #{$m4-p4}) calc(3.75 * #{$m4-p4});
+        }
         &:hover{
           cursor: pointer;
           color: #fff;

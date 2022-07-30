@@ -179,7 +179,7 @@
         border-bottom: 1px solid #555555;
         @include iPhone{
           font-size: $p-fz;
-          padding: calc(3 * #{$m4-p4}) calc(3 * #{$m4-p4});
+          padding: calc(3 * #{$m4-p4});
         }
         &:hover{
           cursor: pointer;
@@ -197,7 +197,7 @@
       justify-content: center;
     }
     .sunglassesProductItem {
-      max-width: 32.099%;
+      width: 32.099%;
       padding-bottom: calc(14 * #{$m4-p4});
       @include mobile{
         width: 46%;

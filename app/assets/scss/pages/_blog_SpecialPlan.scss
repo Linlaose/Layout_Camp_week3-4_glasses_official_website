@@ -29,20 +29,32 @@
     font-weight: $bold;
     color: #AA0601;
     font-family: $english;
+    @include iPhone{
+      font-size: $p-fz;
+    }
   }
   .planningBox{
     display: flex;
     margin-bottom: $pt-pb-80;
+    @include iPhone{
+      margin-bottom: calc(10 * #{$m4-p4});
+    }
   }
   .content{
     width: 66.1%;
     @include mobile{
       width: 74%;
     }
+    @include iPhone{
+      width: 100%;
+    }
     h2{
       padding-top: calc(2 * #{$m4-p4});
       font-size: $h2-fz;
       font-family: $chinese;
+      @include iPhone{
+        font-size: $h4-fz;
+      }
     }
     h4{
       padding-bottom: calc(4 * #{$m4-p4});
@@ -52,6 +64,9 @@
       @include mobile{
         padding-bottom: calc(6 * #{$m4-p4});
       }
+      @include iPhone{
+        font-size: $p-fz;
+      }
     }
     p{
       padding-bottom: calc(10 * #{$m4-p4});
@@ -59,10 +74,16 @@
       @include mobile{
         padding-bottom: calc(6 * #{$m4-p4});
       }
+      @include iPhone{
+        padding-bottom: calc(4 * #{$m4-p4});
+      }
       img{
         padding-bottom: calc(2 * #{$m4-p4});
         @include mobile{
           padding-bottom: calc(4 * #{$m4-p4});
+        }
+        @include iPhone{
+          padding-bottom: calc(2 * #{$m4-p4});
         }
       }
       span{
@@ -82,6 +103,9 @@
       font-family: $english;
       @include mobile{
         padding-top: calc(4 * #{$m4-p4});
+      }
+      @include iPhone{
+        display: none;
       }
       span{
         &:hover{
@@ -104,6 +128,9 @@
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #707070;
+      @include iPhone{
+        display: none;
+      }
       img{
         width: 24px;
         height: 24px;
@@ -135,6 +162,9 @@
     color: #AA0601;
     @include mobile{
       width: 20%;
+    }
+    @include iPhone{
+      display: none;
     }
     h3{
       display: flex;

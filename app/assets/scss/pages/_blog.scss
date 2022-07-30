@@ -39,7 +39,7 @@
   margin: 0 auto;
   padding: calc(24 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(20 * #{$m4-p4});
   @include mobile{
-    padding: calc(20 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(20 * #{$m4-p4});
+    padding: calc(10 * #{$m4-p4}) calc(3 * #{$m4-p4}) calc(16 * #{$m4-p4});
   }
   h2 {
     padding-left: calc(4 * #{$m4-p4});
@@ -47,23 +47,38 @@
     font-weight: $bold;
     font-family: $chinese;
     border-left: 8px solid #9F1213;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   .blogList{
     padding: calc(8 * #{$m4-p4}) 0 calc(16 * #{$m4-p4});
     @include mobile{
-      padding: calc(10 * #{$m4-p4}) 0 calc(5 * #{$m4-p4});
+      padding: calc(10 * #{$m4-p4}) 0 calc(14 * #{$m4-p4});
+    }
+    @include iPhone{
+      padding: calc(6 * #{$m4-p4}) 0 calc(10 * #{$m4-p4});
     }
     .blogItem{
-      padding-bottom: calc(15 * #{$m4-p4});
+      margin-bottom: calc(15 * #{$m4-p4});
       display: flex;
       justify-content: space-between;
+      @include mobile{
+        margin-bottom: calc(6 * #{$m4-p4});
+      }
       @include iPhone{
         display: block;
       }
     }
     .coverImage{
-      width: 49.1%;
+      width: 100%;
       object-fit: cover;
+      @include pad{
+        height: 100%;
+      }
+    }
+    .blogLink{
+      width: 49.1%;
       @include iPhone{
         width: 100%;
       }
@@ -93,6 +108,9 @@
         font-family: $english;
         @include mobile{
           font-size: $p-fz;
+        }
+        @include iPhone{
+          padding: 0;
         }
       }
       .postDate{
@@ -156,7 +174,13 @@
         font-size: $series-h6-fz;
         font-family: $english;
         color: #555555;
-        border: 1px solid #555555;
+        border-top: 1px solid #555555;
+        border-right: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+        @include iPhone {
+          font-size: $p-fz;
+          padding: calc(3 * #{$m4-p4});
+        }
         &:hover {
           cursor: pointer;
           color: #fff;

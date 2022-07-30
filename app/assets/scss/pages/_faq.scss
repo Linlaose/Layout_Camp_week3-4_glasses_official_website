@@ -15,6 +15,9 @@
   @include mobile{
     padding: calc(20 * #{$m4-p4}) 0 calc(8 * #{$m4-p4});
   }
+  @include iPhone{
+    padding: calc(10 * #{$m4-p4}) 0 calc(6 * #{$m4-p4});
+  }
   h2 {
     padding-left: calc(4 * #{$m4-p4});
     font-size: $h2-fz;
@@ -30,11 +33,17 @@
     font-weight: $bold;
     font-family: $chinese;
     padding-top: calc(8 * #{$m4-p4});
+    @include iPhone{
+      padding-top: calc(6 * #{$m4-p4});
+    }
   }
   .qaList{
     padding: calc(6 * #{$m4-p4}) 0 calc(4 * #{$m4-p4});
     .qaItem{
       padding-bottom: calc(8 * #{$m4-p4});
+      @include iPhone{
+        padding-bottom: calc(6 * #{$m4-p4});
+      }
       h5{
         padding-bottom: calc(2 * #{$m4-p4});
         font-size: $h5-fz;

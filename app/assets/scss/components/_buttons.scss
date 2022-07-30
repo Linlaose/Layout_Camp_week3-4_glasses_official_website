@@ -50,6 +50,7 @@
   color: #555555;
   background-color: #FFFFFF;
   border: 1px solid #555555;
+  border-left: 1px solid transparent;
   @include iPhone{
     font-size: $p-fz;
   }

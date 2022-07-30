@@ -7,6 +7,9 @@
     font-weight: $bold;
     font-family: $chinese;
     border-left: 8px solid #9F1213;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   .storeList{
     display: flex;
@@ -16,7 +19,10 @@
       width: 32.1%;
       padding-bottom: calc(6 * #{$m4-p4});
       @include pad{
-        width: 48%;
+        width: 48%
+      };
+      @include iPhone{
+        width: 100%;
       }
     }
     .storeName{
@@ -58,38 +64,45 @@
     }
   }
   .singleList{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: calc(12 * #{$m4-p4});
-    @include mobile{
-      flex-direction: column;
+    @include iPhone{
+      display: block;
+      margin-bottom: calc(8 * #{$m4-p4});
     }
     .singleItem{
       width: 40.5%;
       padding: 0;
-      @include mobile{
+      @include pad{
         width: 100%;
         display: flex;
         justify-content: space-between;
       }
+      @include iPhone{
+        display: block;
+      }
       .singleStore{
-        @include mobile{
+        @include pad{
           width: 48%;
         }
-      }
-      img{
-        @include mobile{
-          max-width: 48%;
-          object-fit: cover;
+        @include iPhone{
+          width: 100%;
         }
       }
-
+      .storeImg{
+        @include pad{
+          width: 48%;
+          object-fit: cover;
+        }
+        @include iPhone{
+          width: 100%;
+        }
+      }
     }
     .googleMap{
       width: 57.5%;
       max-height: 414px;
       object-fit: cover;
-      @include mobile{
+      @include pad{
         width: 100%;
         padding-top: calc(6 * #{$m4-p4});
       }

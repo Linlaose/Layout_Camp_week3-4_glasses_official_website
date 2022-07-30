@@ -112,6 +112,10 @@
   margin: calc(8.25 * #{$m4-p4}) 0 calc(10.25 * #{$m4-p4});
   p {
     position: relative;
+    @include iPhone{
+      display: flex;
+      align-items: center;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -123,6 +127,14 @@
       border-right-color: transparent;
       border-bottom-color: transparent;
       border-left-color: transparent;
+      @include iPhone{
+        left: 312px;
+      }
+    }
+    .district{
+      @include iPhone{
+        font-size: $p-fz;
+      }
     }
   }
   label {
@@ -140,5 +152,9 @@
     color: rgba(73, 80, 87, .75);
     appearance: none;
     border: 1px solid #CED4DA;
+    @include iPhone{
+      width: 276px;
+      margin-left: calc(2 * #{$m4-p4});
+    }
   }
 }

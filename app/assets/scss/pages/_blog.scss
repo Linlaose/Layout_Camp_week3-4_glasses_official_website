@@ -1,5 +1,8 @@
 .searchBar{
   background-color: #650300;
+  @include iPhone{
+    display: none;
+  }
   .searchBox{
     margin: 0 auto;
     display: flex;
@@ -54,14 +57,24 @@
       padding-bottom: calc(15 * #{$m4-p4});
       display: flex;
       justify-content: space-between;
+      @include iPhone{
+        display: block;
+      }
     }
     .coverImage{
       width: 49.1%;
       object-fit: cover;
+      @include iPhone{
+        width: 100%;
+      }
     }
     .blogContent{
       position: relative;
       width: 49.1%;
+      @include iPhone{
+        width: 100%;
+        padding-top: calc(2 * #{$m4-p4});
+      }
       h3{
         font-size: $series-h3-fz;
         font-family: $chinese;
@@ -87,6 +100,9 @@
         font-weight: $medium;
         font-family: $english;
         color: rgba(0, 0, 0, .7);
+        @include iPhone{
+          color: #000000;
+        }
       }
       .abstract{
         font-size: $h5-fz;
@@ -100,6 +116,9 @@
         display: none;
         @include mobile{
           display: block;
+        }
+        @include iPhone{
+          display: none;
         }
       }
       .more{

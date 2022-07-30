@@ -83,6 +83,9 @@
     font-weight: $medium;
     font-family: $english;
     text-align: center;
+    @include iPhone{
+      font-size: $h4-fz;
+    }
   }
   h3{
     padding-bottom: calc(8 * #{$m4-p4});
@@ -92,6 +95,7 @@
     text-align: center;
     @include iPhone{
       padding-bottom: calc(6 * #{$m4-p4});
+      font-size: $h4-fz;
     }
   }
   .opticalProductList{
@@ -170,10 +174,12 @@
         font-size: $series-h6-fz;
         font-family: $english;
         color: #555555;
-        border: 1px solid #555555;
+        border-top: 1px solid #555555;
+        border-right: 1px solid #555555;
+        border-bottom: 1px solid #555555;
         @include iPhone{
           font-size: $p-fz;
-          padding: calc(3 * #{$m4-p4}) calc(3.75 * #{$m4-p4});
+          padding: calc(3 * #{$m4-p4}) calc(3 * #{$m4-p4});
         }
         &:hover{
           cursor: pointer;
@@ -194,8 +200,11 @@
       max-width: 32.099%;
       padding-bottom: calc(14 * #{$m4-p4});
       @include mobile{
-        max-width: 46%;
+        width: 46%;
         padding-bottom: calc(4 * #{$m4-p4});
+      }
+      @include iPhone{
+        width: 100%;
       }
       p {
         display: flex;

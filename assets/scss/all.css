@@ -1309,6 +1309,9 @@ main .container .listHide {
   @media (max-width: 767px) {
     .faqBox {
       padding: calc(20 * 4px) 0 calc(8 * 4px); } }
+  @media (max-width: 576px) {
+    .faqBox {
+      padding: calc(10 * 4px) 0 calc(6 * 4px); } }
   .faqBox h2 {
     padding-left: calc(4 * 4px);
     font-size: 48px;
@@ -1323,10 +1326,16 @@ main .container .listHide {
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     padding-top: calc(8 * 4px); }
+    @media (max-width: 576px) {
+      .faqBox h4 {
+        padding-top: calc(6 * 4px); } }
   .faqBox .qaList {
     padding: calc(6 * 4px) 0 calc(4 * 4px); }
     .faqBox .qaList .qaItem {
       padding-bottom: calc(8 * 4px); }
+      @media (max-width: 576px) {
+        .faqBox .qaList .qaItem {
+          padding-bottom: calc(6 * 4px); } }
       .faqBox .qaList .qaItem h5 {
         padding-bottom: calc(2 * 4px);
         font-size: 20px;

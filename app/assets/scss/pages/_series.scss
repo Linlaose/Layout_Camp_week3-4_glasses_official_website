@@ -16,6 +16,9 @@
 .imgHide{
   display: none;
 }
+.imgShow{
+  display: block;
+}
 
 .listHide{
   display: none;
@@ -260,6 +263,7 @@
 }
 .opticalImageHeaderSm{
   display: none;
+  width: 100%;
   @include mobile{
     display: block;
   }
@@ -272,7 +276,8 @@
 }
 .sunglassesImageHeaderSm{
   display: none;
-  @include mobile{
+  width: 100%;
+  @include iPhone{
     display: block;
   }
 }

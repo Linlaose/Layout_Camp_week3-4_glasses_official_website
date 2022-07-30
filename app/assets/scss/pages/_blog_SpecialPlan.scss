@@ -1,5 +1,9 @@
 .specialPlanSearchBar {
+  display: none;
   background-color: #650300;
+  @include iPhone {
+    display: block;
+  }
   .searchBox {
     margin: 0 auto;
     display: flex;
@@ -201,13 +205,13 @@
       align-items: center;
       gap: calc(#{$gap} / 2);
       font-size: $series-h3-fz;
-      @include mobile{
+      @include pad{
         font-size: $p-fz;
       }
       img{
         width: 48px;
         height: 48px;
-        @include mobile{
+        @include pad{
           width: 24px;
           height: 24px;
         }
@@ -217,7 +221,7 @@
       font-size: $h4-fz;
       font-weight: $bold;
       font-family: $english;
-      @include mobile{
+      @include pad{
         font-size: $p-fz;
       }
       .tagsItem{

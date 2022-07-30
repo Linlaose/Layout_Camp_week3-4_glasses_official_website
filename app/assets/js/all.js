@@ -12,6 +12,7 @@ const functionalTitle = document.querySelector('.functional');
 // 經過 querySelectorAll 選取的變數會被儲存為陣列，使用時注意，不可視為單一元素
 const opticalImage = document.querySelectorAll('.opticalImageHeader');
 const opticalImageSm = document.querySelectorAll('.opticalImageHeaderSm');
+const sunglassesImageSm = document.querySelectorAll('.sunglassesImageHeaderSm');
 const celluloid = document.querySelector('.titleCelluloid');
 const opticalList = document.querySelector('.opticalProductList');
 const sunglassesList = document.querySelector('.sunglassesList');
@@ -67,6 +68,28 @@ if (seriesItem) { //先加上 if 判斷，是為了避免頁面切換之後找�
       functionalTitle.setAttribute('class', 'borderShow');
       opticalTitle.setAttribute('class', 'borderTransparent');
       sunglassesTitle.setAttribute('class', 'borderTransparent');
+    }
+  });
+}
+
+// 配合斷點觸發產品頁籤
+if (seriesItem && window.innerWidth === 768) {
+  seriesItem.addEventListener('click', (e) => {
+    if (e.target.textContent === 'OPTICAL') {
+      opticalImageSm.forEach((i) => {
+        i.setAttribute('class', 'opticalImageHeaderSm');
+      });
+      sunglassesImageSm.forEach((i) => {
+        i.removeAttribute('style');
+      });
+    }
+    else if (e.target.textContent === 'SUNGLASSES') {
+      opticalImageSm.forEach((i) => {
+        i.setAttribute('class', 'imgHide');
+      });
+      sunglassesImageSm.forEach((i) => {
+        i.style.display = 'block';
+      });
     }
   });
 }

@@ -1069,7 +1069,7 @@ footer {
         @media (max-width: 576px) {
           .productBox .pageController .pageList .pageItem {
             font-size: 16px;
-            padding: calc(3 * 4px) calc(3 * 4px); } }
+            padding: calc(3 * 4px); } }
         .productBox .pageController .pageList .pageItem:hover {
           cursor: pointer;
           color: #fff;
@@ -1087,7 +1087,7 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center; } }
     .productBox .sunglassesProductList .sunglassesProductItem {
-      max-width: 32.099%;
+      width: 32.099%;
       padding-bottom: calc(14 * 4px); }
       @media (max-width: 767px) {
         .productBox .sunglassesProductList .sunglassesProductItem {
@@ -1350,35 +1350,49 @@ main .container .listHide {
   padding: calc(24 * 4px) calc(3 * 4px) calc(20 * 4px); }
   @media (max-width: 767px) {
     .blogBox {
-      padding: calc(20 * 4px) calc(3 * 4px) calc(20 * 4px); } }
+      padding: calc(10 * 4px) calc(3 * 4px) calc(16 * 4px); } }
   .blogBox h2 {
     padding-left: calc(4 * 4px);
     font-size: 48px;
     font-weight: 700;
     font-family: "Noto Sans TC", sans-serif;
     border-left: 8px solid #9F1213; }
+    @media (max-width: 576px) {
+      .blogBox h2 {
+        font-size: 24px; } }
   .blogBox .blogList {
     padding: calc(8 * 4px) 0 calc(16 * 4px); }
     @media (max-width: 767px) {
       .blogBox .blogList {
-        padding: calc(10 * 4px) 0 calc(5 * 4px); } }
+        padding: calc(10 * 4px) 0 calc(14 * 4px); } }
+    @media (max-width: 576px) {
+      .blogBox .blogList {
+        padding: calc(6 * 4px) 0 calc(10 * 4px); } }
     .blogBox .blogList .blogItem {
-      padding-bottom: calc(15 * 4px);
+      margin-bottom: calc(15 * 4px);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 767px) {
+        .blogBox .blogList .blogItem {
+          margin-bottom: calc(6 * 4px); } }
       @media (max-width: 576px) {
         .blogBox .blogList .blogItem {
           display: block; } }
     .blogBox .blogList .coverImage {
-      width: 49.1%;
+      width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-      @media (max-width: 576px) {
+      @media (max-width: 992px) {
         .blogBox .blogList .coverImage {
+          height: 100%; } }
+    .blogBox .blogList .blogLink {
+      width: 49.1%; }
+      @media (max-width: 576px) {
+        .blogBox .blogList .blogLink {
           width: 100%; } }
     .blogBox .blogList .blogContent {
       position: relative;
@@ -1411,6 +1425,9 @@ main .container .listHide {
         @media (max-width: 767px) {
           .blogBox .blogList .blogContent .englishTitle {
             font-size: 16px; } }
+        @media (max-width: 576px) {
+          .blogBox .blogList .blogContent .englishTitle {
+            padding: 0; } }
       .blogBox .blogList .blogContent .postDate {
         font-size: 16px;
         font-weight: 500;
@@ -1469,7 +1486,13 @@ main .container .listHide {
         font-size: 18px;
         font-family: "Roboto", sans-serif;
         color: #555555;
-        border: 1px solid #555555; }
+        border-top: 1px solid #555555;
+        border-right: 1px solid #555555;
+        border-bottom: 1px solid #555555; }
+        @media (max-width: 576px) {
+          .blogBox .pageController .pageList .pageItem {
+            font-size: 16px;
+            padding: calc(3 * 4px); } }
         .blogBox .pageController .pageList .pageItem:hover {
           cursor: pointer;
           color: #fff;
@@ -1502,20 +1525,32 @@ main .container .listHide {
     font-weight: 700;
     color: #AA0601;
     font-family: "Roboto", sans-serif; }
+    @media (max-width: 576px) {
+      .specialPlanningBox .hashTags {
+        font-size: 16px; } }
   .specialPlanningBox .planningBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 80px; }
+    @media (max-width: 576px) {
+      .specialPlanningBox .planningBox {
+        margin-bottom: calc(10 * 4px); } }
   .specialPlanningBox .content {
     width: 66.1%; }
     @media (max-width: 767px) {
       .specialPlanningBox .content {
         width: 74%; } }
+    @media (max-width: 576px) {
+      .specialPlanningBox .content {
+        width: 100%; } }
     .specialPlanningBox .content h2 {
       padding-top: calc(2 * 4px);
       font-size: 48px;
       font-family: "Noto Sans TC", sans-serif; }
+      @media (max-width: 576px) {
+        .specialPlanningBox .content h2 {
+          font-size: 24px; } }
     .specialPlanningBox .content h4 {
       padding-bottom: calc(4 * 4px);
       font-size: 24px;
@@ -1524,17 +1559,26 @@ main .container .listHide {
       @media (max-width: 767px) {
         .specialPlanningBox .content h4 {
           padding-bottom: calc(6 * 4px); } }
+      @media (max-width: 576px) {
+        .specialPlanningBox .content h4 {
+          font-size: 16px; } }
     .specialPlanningBox .content p {
       padding-bottom: calc(10 * 4px);
       font-family: "Noto Sans TC", sans-serif; }
       @media (max-width: 767px) {
         .specialPlanningBox .content p {
           padding-bottom: calc(6 * 4px); } }
+      @media (max-width: 576px) {
+        .specialPlanningBox .content p {
+          padding-bottom: calc(4 * 4px); } }
       .specialPlanningBox .content p img {
         padding-bottom: calc(2 * 4px); }
         @media (max-width: 767px) {
           .specialPlanningBox .content p img {
             padding-bottom: calc(4 * 4px); } }
+        @media (max-width: 576px) {
+          .specialPlanningBox .content p img {
+            padding-bottom: calc(2 * 4px); } }
       .specialPlanningBox .content p span {
         color: #555555; }
         .specialPlanningBox .content p span:hover {
@@ -1554,6 +1598,9 @@ main .container .listHide {
       @media (max-width: 767px) {
         .specialPlanningBox .content .shareList {
           padding-top: calc(4 * 4px); } }
+      @media (max-width: 576px) {
+        .specialPlanningBox .content .shareList {
+          display: none; } }
       .specialPlanningBox .content .shareList span:hover {
         cursor: auto;
         border-bottom: none; }
@@ -1577,6 +1624,9 @@ main .container .listHide {
           -ms-flex-align: center;
               align-items: center;
       border-top: 1px solid #707070; }
+      @media (max-width: 576px) {
+        .specialPlanningBox .content .articlePage {
+          display: none; } }
       .specialPlanningBox .content .articlePage img {
         width: 24px;
         height: 24px; }
@@ -1608,6 +1658,9 @@ main .container .listHide {
     @media (max-width: 767px) {
       .specialPlanningBox .tags {
         width: 20%; } }
+    @media (max-width: 576px) {
+      .specialPlanningBox .tags {
+        display: none; } }
     .specialPlanningBox .tags h3 {
       display: -webkit-box;
       display: -ms-flexbox;

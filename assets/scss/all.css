@@ -246,9 +246,18 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: calc(4 * 4px) calc(3 * 4px); }
+    @media (max-width: 576px) {
+      header .headerBox {
+        padding: calc(3.75 * 4px) calc(3 * 4px); } }
   header .headerLogo {
-    width: 80px; }
+    min-width: 80px;
+    height: 48px;
+    -o-object-fit: contain;
+       object-fit: contain; }
   header .navItem {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -273,7 +282,7 @@ header {
           cursor: pointer; } }
   header .menuOpen {
     position: absolute;
-    top: 80px;
+    top: 78px;
     left: 0;
     z-index: 10;
     width: 100%;
@@ -292,6 +301,8 @@ header {
           cursor: pointer;
           background-color: black;
           border: none; }
+  header .hamburger {
+    min-width: 36px; }
 
 .contactUs {
   display: -webkit-box;
@@ -310,10 +321,10 @@ header {
       padding: calc(10 * 4px) calc(3 * 4px); } }
 
 .contactBox {
-  width: 33.43%; }
+  width: 40%; }
   @media (max-width: 992px) {
     .contactBox {
-      width: auto; } }
+      width: 66%; } }
   @media (max-width: 767px) {
     .contactBox {
       width: 80%; } }
@@ -1173,10 +1184,10 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 24px; }
+    margin-left: calc(-6 * 4px); }
     .storeBox .storeList .storeItem {
-      width: 32.1%;
-      padding-bottom: calc(6 * 4px); }
+      width: 33.3%;
+      padding: 0 0 calc(6 * 4px) calc(6 * 4px); }
       @media (max-width: 992px) {
         .storeBox .storeList .storeItem {
           width: 48%; } }
@@ -1219,13 +1230,17 @@ footer {
     .storeBox .storeInfoList .storeInfoItem {
       padding: 4px 0; }
   .storeBox .singleList {
-    margin-bottom: calc(12 * 4px); }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 calc(12 * 4px) 0;
+    gap: calc(6 * 4px); }
     @media (max-width: 576px) {
       .storeBox .singleList {
         display: block;
         margin-bottom: calc(8 * 4px); } }
     .storeBox .singleList .singleItem {
-      width: 40.5%;
+      width: 42.6%;
       padding: 0; }
       @media (max-width: 992px) {
         .storeBox .singleList .singleItem {
@@ -1254,8 +1269,7 @@ footer {
         .storeBox .singleList .singleItem .storeImg {
           width: 100%; } }
     .storeBox .singleList .googleMap {
-      width: 57.5%;
-      max-height: 414px;
+      width: 55.5%;
       -o-object-fit: cover;
          object-fit: cover; }
       @media (max-width: 992px) {

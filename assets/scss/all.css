@@ -31,6 +31,9 @@
   color: #555555;
   background-color: #FFFFFF;
   border: 1px solid #555555; }
+  @media (max-width: 576px) {
+    .previousButton {
+      font-size: 16px; } }
   .previousButton:hover {
     cursor: pointer;
     background-color: #F2F2F2; }
@@ -42,6 +45,9 @@
   color: #555555;
   background-color: #FFFFFF;
   border: 1px solid #555555; }
+  @media (max-width: 576px) {
+    .nextButton {
+      font-size: 16px; } }
   .nextButton:hover {
     cursor: pointer;
     background-color: #F2F2F2; }
@@ -909,6 +915,9 @@ footer {
   @media (max-width: 767px) {
     .series .seriesItem {
       font-size: 24px; } }
+  @media (max-width: 576px) {
+    .series .seriesItem {
+      font-size: 16px; } }
   .series .seriesItem h3 {
     width: 33.333%;
     text-align: center; }
@@ -933,6 +942,9 @@ footer {
 .productBox {
   padding: 80px 0;
   margin: 0 auto; }
+  @media (max-width: 576px) {
+    .productBox {
+      padding: calc(10 * 4px) calc(3 * 4px) calc(16 * 4px); } }
   .productBox h2 {
     font-size: 42px;
     font-weight: 500;
@@ -944,6 +956,9 @@ footer {
     font-weight: 400;
     font-family: "Noto Sans TC", sans-serif;
     text-align: center; }
+    @media (max-width: 576px) {
+      .productBox h3 {
+        padding-bottom: calc(6 * 4px); } }
   .productBox .opticalProductList {
     gap: 24px;
     display: -webkit-box;
@@ -963,6 +978,10 @@ footer {
         .productBox .opticalProductList .opticalProductItem {
           max-width: 46%;
           padding-bottom: 16px; } }
+      @media (max-width: 576px) {
+        .productBox .opticalProductList .opticalProductItem {
+          max-width: 100%;
+          padding: 0; } }
       .productBox .opticalProductList .opticalProductItem p {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1021,6 +1040,10 @@ footer {
         font-family: "Roboto", sans-serif;
         color: #555555;
         border: 1px solid #555555; }
+        @media (max-width: 576px) {
+          .productBox .pageController .pageList .pageItem {
+            font-size: 16px;
+            padding: calc(3 * 4px) calc(3.75 * 4px); } }
         .productBox .pageController .pageList .pageItem:hover {
           cursor: pointer;
           color: #fff;
